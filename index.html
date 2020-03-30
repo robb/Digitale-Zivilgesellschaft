@@ -2,15 +2,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Empfehlungen für ein gemeinwohlorientiertes digitales Ökosystem</title>
+    <title>Aus der Krise lernen: Digitale Zivilgesellschaft stärken!</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="twitter:card" content="summary" />
-
+    <meta content="/img/twitter.png" name="twitter:image" />
     <meta property="og:url" content="https://digitalezivilgesellschaft.org" />
-    <meta property="og:title" content="Empfehlungen für ein gemeinwohlorientiertes digitales Ökosystem" />
+    <meta property="og:title" content="Aus der Krise lernen: Digitale Zivilgesellschaft stärken!" />
     <meta property="og:description"
         content="Auf dieser Seite finden sich die Empfehlungen von mehreren zivilgesellschaftlichen Organisationen, die sich für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen einsetzen. Beides ist in Zeiten von Krisen wichtiger denn je." />
 
@@ -22,9 +22,19 @@
     <style>
         :root {
             --green: rgb(2, 252, 183);
+            --dark-green: rgb(18, 168, 126);
+            --light-gray: #f3f3f3;
 
             --fontSize: calc(100vw / 64);
             --lineHeight: calc(var(--fontSize) * 1.5);
+        }
+
+        @media print {
+            :root {
+                --green: black;
+                --dark-green: black;
+                --light-gray: white;
+            }
         }
 
         @media only screen and (max-width: 600px) {
@@ -52,6 +62,10 @@
             font-feature-settings: 'kern'1, 'rlig'1, 'liga'1, 'calt'1, 'cv10'0, 'dlig'1, 'ss01'1, 'cv05'1;
         }
 
+        a:hover {
+            color: var(--dark-green)
+        }
+
         .button {
             display: block;
             text-align: center;
@@ -71,33 +85,6 @@
             border-color: var(--green);
 
             transition: background-color 0s, border-color 0s;
-        }
-
-        .logos {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: center;
-
-
-            overflow: hidden;
-        }
-
-        .logos img {
-            height: calc(var(--lineHeight) * 3);
-
-            max-height: 300px;
-            padding: calc(var(--lineHeight) * 1.5);
-            margin: 0;
-            width: unset;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .logos img {
-                height: calc(var(--lineHeight) * 2);
-                padding: calc(var(--lineHeight) * 0.75);
-            }
         }
 
         .stroke {
@@ -129,6 +116,71 @@
         .third.stroke:after {
             top: -2px;
             background-image: url('/img/stroke3.png');
+        }
+
+        blockquote {
+            background: var(--light-gray);
+            border-left: var(--hrThickness) solid var(--green);
+            padding: calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2);
+        }
+
+        blockquote p:first-child,
+        blockquote p:last-child {
+            position: relative;
+        }
+
+        blockquote p:first-child::before,
+        blockquote p:last-of-type::after {
+            color: var(--dark-green);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        blockquote p:first-child::before {
+            content: '„';
+            position: absolute;
+            left: -.5rem;
+        }
+
+        blockquote p:last-of-type::after {
+            content: '“';
+            margin-left: -.25rem;
+        }
+
+        blockquote p {
+            font-style: italic;
+        }
+
+        blockquote footer {
+            font-weight: 500;
+            font-size: .85rem;
+            line-height: var(--lineHeight);
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        .logos img {
+            height: calc(var(--lineHeight) * 3);
+
+            max-height: 300px;
+            padding: calc(var(--lineHeight) * 1.5);
+            margin: 0;
+            width: unset;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logos img {
+                height: calc(var(--lineHeight) * 2);
+                padding: calc(var(--lineHeight) * 0.75);
+            }
         }
 
         @media screen {
@@ -170,18 +222,20 @@
             h2,
             h3,
             h4 {
-                page-break-after: avoid;
+                break-after: avoid;
             }
 
             h1+p,
             h2+p,
             h3+p,
             h4+p {
-                page-break-before: avoid;
+                break-before: avoid;
             }
 
-            p {
-                page-break-inside: avoid;
+            p,
+            blockquote,
+            img {
+                break-inside: avoid;
             }
 
             .logos img {
@@ -224,46 +278,49 @@
             </r-cell>
             <r-cell span-s="row" span="3-7">
                 <h1 class="h2">
-                    Der Aufbau eines gemeinwohl&shy;orientierten digitalen Ökosystems muss endlich politische Priorität
-                    bekommen!
+                    Aus der Krise lernen: Digitale Zivilgesellschaft stärken!
                 </h1>
+
+                <p>
+                    <time datetime="2020-04-01">
+                        Mittwoch, 01. April 2020.
+                    </time> Als zivilgesellschaftliche Organisationen, die sich für eine unabhängige
+                    digitale Infrastruktur und freien Zugang zu Wissen einsetzen, fordern wir: „Der Aufbau eines
+                    gemeinwohlorientierten digitalen Ökosystems muss endlich politische Priorität bekommen!“
+                </p>
 
                 <p>
                     In Krisensituationen zeigt sich die Bedeutung von unabhängigen und belastbaren digitalen
                     Infrastrukturen, die es Menschen, Organisationen und Firmen ermöglichen, ihren alltäglichen Aufgaben
                     nachzukommen. Von den Umstellungen zur Eindämmung von Covid-19 haben bislang vor allem die großen
                     Technologiekonzerne profitiert: Die Verlagerung des Lebens in die digitale Sphäre beschert ihnen
-                    größere Marktanteile, wachsende Nutzungszahlen und immer größere Datensammlungen.
-                    Um in in Zeiten von Krisen nicht von ihnen abhängig zu sein, braucht es ein aktives digitales
-                    Ökosystem, das echte Wahlmöglichkeiten bietet.
+                    größere Marktanteile, Nutzungszahlen und Datensammlungen. Um in Krisenzeiten nicht von ihnen
+                    abhängig zu sein, braucht es ein aktives digitales Ökosystem, das echte Wahlmöglichkeiten bietet.
                 </p>
 
                 <p>
-                    Seit vielen Jahren entwickeln zivilgesellschaftliche Organisationen, Sozialunternehmen und
-                    Freiwillige digitale Werkzeuge, Infrastruktur und Policy-Empfehlungen für eine nachhaltige und
-                    zukunftsfähige Digitalisierung: von freiem Zugang zum Internet durch Initiativen für freie
-                    Funknetze, der Bereitstellung von sicheren Kommunikationswegen, Angeboten zu Freiem Wissen bis hin
-                    zu Open-Data-Anwendungen, die Bürgerinnen und Bürgern Zugang zu Informationen geben. Diese Ansätze
-                    folgen gemeinschaftlichen Werten wie Freiheit, Offenheit und Transparenz, und genau darin liegt ihr
-                    gesellschaftlicher Mehrwert. Bisher erhalten sie dafür noch nicht genug Unterstützung von
-                    öffentlicher Seite.
-                </p>
-
-                <p class="h4">
-                    Erst zivilgesellschaftliches Engagement macht digitale Infrastruktur wirklich resilient.
+                    Software und dezentrale Plattformen ohne kommerziellen Hintergrund stammen oft aus
+                    gemeinwohlorientiertem Engagement. Nicht nur Unternehmen und Selbständigen bricht gerade die
+                    Finanzierung weg, sondern auch ehrenamtlich getragenen Organisationen. Wichtige Teile unserer
+                    digitalen Infrastruktur beruhen auf ihrer Arbeit. Für sie gibt es aber kein milliardenschweres
+                    Hilfspaket.
                 </p>
 
                 <p>
-                    Ihr volles Potenzial kann die digitale Zivilgesellschaft nur dann entfalten, wenn Politik nicht nur
-                    punktuell in
-                    Krisensituationen unterstützt, sondern langfristig und nachhaltig zivilgesellschaftliches Engagement
-                    und
-                    den
-                    Aufbau eines gemeinwohlorientieren digitalen Ökosystems fördert.
+                    Um besser vorbereitet zu sein für zukünftige Krisensituationen, muss ihre Arbeit gestärkt werden.
+                    Das Gute ist: Es gibt bereits ein weitreichendes Netz an Menschen und Organisationen, die gemeinsam
+                    an dezentraler und damit widerstandsfähiger digitaler Infrastruktur arbeiten und so die Grundlage
+                    dafür schaffen, dass wir in der nächsten Krise besser aufgestellt sind. Sie arbeiten an freiem
+                    Zugang zum Internet wie die Initiativen für freie Funknetze, der Bereitstellung von sicheren
+                    Kommunikationswegen, Angeboten zu Freiem Wissen bis hin zu Open-Data- und Freien-Software
+                    Anwendungen. Bisher erhalten sie dafür noch nicht genug Unterstützung von öffentlicher Seite. Jetzt
+                    liegt es an der Politik, auf sie zuzugehen und sie zu unterstützen.
                 </p>
 
                 <p>
-                    Wir wenden uns daher mit folgenden Empfehlungen an die Politik:
+                    Um langfristig und damit nachhaltig zivilgesellschaftliches Engagement und den Erhalt eines
+                    gemeinwohlorientierten digitalen Ökosystems zu fördern, schlagen wir folgende konkrete Maßnahmen vor
+                    – denn nach der Krise ist vor der Krise, wenn alles beim Alten bleibt:
                 </p>
             </r-cell>
 
@@ -273,16 +330,16 @@
 
             <r-cell span-s="row" span="3-7">
                 <h2 class="stroke">
-                    Weitere Öffnung der Digitalpolitik für gesellschaftlichen Input
+                    Öffnung der Digitalpolitik für gesellschaftlichen Input
                 </h2>
             </r-cell>
             <r-cell span-s="row" span="3-7">
                 <p>
                     Digitalpolitik, die das Gemeinwohl ins Zentrum stellt, lässt sich nur gemeinsam mit
-                    gesellschaftlichen Akteurinnen, Akteuren und Initiativen verwirklichen. Hierfür muss die Politik
-                    sich noch weiter für Vorschläge aus der Gesellschaft öffnen und diese in die Politikgestaltung
+                    gesellschaftlichen Akteurinnen, Akteuren und Initiativen verwirklichen. Hierfür muss sich die
+                    Politik noch weiter für Vorschläge aus der Gesellschaft öffnen und diese in die Politikgestaltung
                     miteinbeziehen. Dazu braucht es die Anerkennung zivilgesellschaftlicher Expertise und ein klares
-                    Bekenntnis, deren Wissen und Kompetenzen für die Politikgestaltung zu nutzen.
+                    Bekenntnis, deren Wissen und Kompetenzen zu nutzen.
                 </p>
             </r-cell>
 
@@ -297,27 +354,17 @@
             <r-cell span-s="row" span="3-7">
                 <p>
                     Die digitale Zivilgesellschaft ist nur durch das ehrenamtliche Engagement und die Spenden von
-                    Bürgerinnen und
-                    Bürgern arbeitsfähig. Gerade in Krisensituationen brechen diese Stützpfeiler schnell weg und
-                    bedrohen
-                    die
-                    Existenz von Vereinen, Stiftungen und Initiativen.
+                    Bürgerinnen und Bürgern arbeitsfähig. Gerade in Krisensituationen brechen diese Stützpfeiler schnell
+                    weg und bedrohen die Existenz von Vereinen, Stiftungen und Initiativen.
                 </p>
 
                 <p>
-                    In Deutschland mangelt es an niedrigschwelliger finanzieller Unterstützung für Organisationen
-                    und
-                    Sozialunternehmen aus der digitalen Zivilgesellschaft. Es braucht neue Fördermechanismen, die
-                    den Aufbau
-                    nachhaltiger Strukturen unterstützen und nicht nur Innovation im Blick haben, sondern auch die
-                    Instandhaltung
-                    und Weiterentwicklung bestehender Technologien. Möglich wäre eine solche Förderung
-                    beispielsweise durch
-                    eine vom
-                    Bund geförderte Stiftung öffentlichen Rechts, die Entwicklung, Wartung und Bereitstellung
-                    digitaler
-                    Technologien
-                    für die Gesellschaft fördert.
+                    In Deutschland mangelt es an niedrigschwelliger finanzieller Unterstützung für Organisationen und
+                    Sozialunternehmen aus der digitalen Zivilgesellschaft. Es braucht neue Fördermechanismen, die den
+                    Aufbau nachhaltiger Strukturen unterstützen und nicht nur Innovation im Blick haben, sondern auch
+                    die Instandhaltung und Weiterentwicklung bestehender Technologien. Möglich wäre eine solche
+                    Förderung beispielsweise durch eine vom Bund geförderte Stiftung öffentlichen Rechts, die
+                    Entwicklung, Wartung und Bereitstellung digitaler Technologien für die Gesellschaft fördert.
                 </p>
             </r-cell>
 
@@ -330,20 +377,15 @@
                 </h2>
             </r-cell>
             <r-cell span-s="row" span="3-7">
-
                 <p>
                     Es braucht rechtliche Grundlagen, die es verpflichtend machen, dass mit öffentlichen Geldern
                     erarbeitete Inhalte offen zugänglich und weiterverwendbar gemacht werden. Der Datenschutz muss dabei
                     immer gewahrt sein.
                 </p>
-
                 <p>
-                    Dazu gehören: öffentlich finanzierte Software, Datenbestände und Informationen öffentlicher
-                    Stellen,
-                    Forschungs-
-                    und Bildungsinhalte öffentlich getragener Institutionen sowie die Inhalte des
-                    öffentlich-rechtlichen
-                    Rundfunks.
+                    Dazu gehören: öffentlich finanzierte Software, Datenbestände und Informationen
+                    öffentlicher Stellen, Forschungs- und Bildungsinhalte öffentlich getragener Institutionen sowie die
+                    Inhalte des öffentlich-rechtlichen Rundfunks.
                 </p>
             </r-cell>
 
@@ -369,8 +411,62 @@
                     Standards, Freier- und Open-Source-Software-Technologien.
                 </p>
             </r-cell>
+            <r-cell span-s="row" span="2-6">
+                <blockquote>
+                    <p>
+                        Eine unabhängige und zuverlässige digitale Infrastruktur ist auch eine Frage der sozialen
+                        Gerechtigkeit. Denn der Zugang zu Wissen und digitalen Werkzeugen entscheidet, wer in Zukunft
+                        mitgestalten kann und wer abgehängt wird.
+                    </p>
+                    <footer>
+                        Elisa Lindinger & Julia Kloiber, <a href="https://superrr.net">Superrr Lab</a>
+                    </footer>
+                </blockquote>
+            </r-cell>
             <r-cell span-s="row" span="3-7">
-                <p>
+                <blockquote>
+                    <p>
+                        Gute Digitalpolitik und digitale Infrastruktur für die Gesellschaft kann nur gemeinsam mit ihr
+                        erfolgreich entwickelt und gestaltet werden.
+                    </p>
+                    <footer>
+                        Stefan Heumann & Anna Wohlfarth, Vorstand,
+                        <a href="https://www.stiftung-nv.de">
+                            Stiftung&nbsp;Neue&nbsp;Verantwortung&nbsp;e.&nbsp;V.
+                        </a>
+                    </footer>
+                </blockquote>
+            </r-cell>
+            <r-cell span-s="row" span="2-6">
+                <blockquote>
+                    <p>
+                        Gemeinnützige Projekte wie Wikipedia und Freifunk helfen gerade jetzt, dass alle Zugang zu
+                        Informationen erhalten. Gefördert wird dies bisher kaum. Die Zeit ist gekommen, unsere digitalen
+                        Abwehrkräfte zu stärken.
+                    </p>
+                    <footer>
+                        Abraham Taherivand, Geschäftsführender Vorstand,
+                        <a href="https://wikimediafoundation.org">
+                            Wikimedia&nbsp;Deutschland&nbsp;e.&nbsp;V.
+                        </a>
+                    </footer>
+                </blockquote>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+                <blockquote>
+                    <p>
+                        Gerade in dieser Krise sehen wir, wie wichtig es ist, die rechtliche Grundlagen zu schaffen, die
+                        es erfordern, dass mit öffentlichen Geldern entwickelte Software unter einer Freie-Software- und
+                        Open-Source Lizenz veröffentlicht wird.
+                    </p>
+                    <footer>
+                        Alexander Sander, Policy Manager,
+                        <a href="https://fsfe.org">Free Software Foundation Europe</a>
+                    </footer>
+                </blockquote>
+            </r-cell>
+            <r-cell span-s="row" span="2-7" class="compact">
+                <p class="h4 center low-contrast">
                     Unterzeichnende Organisationen:
                 </p>
             </r-cell>
@@ -390,10 +486,17 @@
                     <img width="200" style="transform: scale(1.1);" src="logos/ccc.png" title="Chaos Computer Club" />
                 </a>
                 <a href="https://superrr.net">
-                    <img width="200" src="logos/superrr-placeholder.jpeg" title="Superrr Labs" />
+                    <img width="200" style="transform: scale(1.22);" src="logos/superrr.png" title="Superrr Labs" />
                 </a>
                 <a href="https://d-64.org">
                     <img width="200" src="logos/d64.png" title="D64 – Zentrum für digitalen Fortschritt" />
+                </a>
+                <a href="https://stiftung-nv.de">
+                    <img width="200" src="logos/snv.png" title="Stiftung Neue Verantwortung" />
+                </a>
+                <a href="http://wikimediafoundation.org">
+                    <img width="200" style="transform: scale(1.2);" src="logos/wikimedia.png"
+                        title="Wikimedia Foundation" />
                 </a>
             </r-cell>
             <hr class="only-screen">
