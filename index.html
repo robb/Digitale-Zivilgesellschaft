@@ -1,0 +1,435 @@
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Empfehlungen für ein gemeinwohlorientiertes digitales Ökosystem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta property="og:url" content="https://digitalezivilgesellschaft.org" />
+    <meta property="og:title" content="Empfehlungen für ein gemeinwohlorientiertes digitales Ökosystem" />
+    <meta property="og:description"
+        content="Auf dieser Seite finden sich die Empfehlungen von mehreren zivilgesellschaftlichen Organisationen, die sich für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen einsetzen. Beides ist in Zeiten von Krisen wichtiger denn je." />
+
+    <meta name="description"
+        content="Auf dieser Seite finden sich die Empfehlungen von mehreren zivilgesellschaftlichen Organisationen, die sich für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen einsetzen. Beides ist in Zeiten von Krisen wichtiger denn je." />
+
+    <link rel="canonical" href="https://digitalezivilgesellschaft.org">
+    <link rel="stylesheet" href="raster/raster2.css">
+    <style>
+        :root {
+            --green: rgb(2, 252, 183);
+
+            --fontSize: calc(100vw / 64);
+            --lineHeight: calc(var(--fontSize) * 1.5);
+        }
+
+        @media only screen and (max-width: 600px) {
+            :root {
+                --fontSize: 16px;
+            }
+        }
+
+        @media only screen and (max-device-width: 812px) and (orientation: landscape) {
+            :root {
+                --fontSize: 1.7vw;
+            }
+        }
+
+        html {
+            background-color: #f8f8f8;
+            background-image: url('/img/noise.png');
+            background-size: 256px 256px;
+
+            font-feature-settings: 'kern'1, 'rlig'1, 'liga'1, 'cv04'1, 'cv07'1, 'cv11'1;
+        }
+
+        h1,
+        h2 {
+            font-feature-settings: 'kern'1, 'rlig'1, 'liga'1, 'calt'1, 'cv10'0, 'dlig'1, 'ss01'1, 'cv05'1;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            border-width: 3px;
+            border-color: black;
+            border-style: solid;
+            border-radius: 8px;
+            padding: calc(var(--lineHeight) - 3px);
+            text-decoration: none;
+
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+
+        .button:hover {
+            color: black;
+            background: var(--green);
+            border-color: var(--green);
+
+            transition: background-color 0s, border-color 0s;
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
+
+
+            overflow: hidden;
+        }
+
+        .logos img {
+            height: calc(var(--lineHeight) * 3);
+
+            max-height: 300px;
+            padding: calc(var(--lineHeight) * 1.5);
+            margin: 0;
+            width: unset;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logos img {
+                height: calc(var(--lineHeight) * 2);
+                padding: calc(var(--lineHeight) * 0.75);
+            }
+        }
+
+        .stroke {
+            position: relative;
+        }
+
+        .stroke:after {
+            content: '';
+            background-image: url('/img/stroke1.png');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            display: block;
+            top: 1px;
+            left: -15px;
+            height: calc(var(--lineHeight) * 2);
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
+
+        .second.stroke:after {
+            top: 4px;
+            background-image: url('/img/stroke2.png');
+        }
+
+        .third.stroke:after {
+            top: -2px;
+            background-image: url('/img/stroke3.png');
+        }
+
+        @media screen {
+            .low-contrast {
+                color: #333;
+            }
+        }
+
+        @media not screen {
+
+            .only-screen,
+            .only-screen * {
+                display: none !important;
+            }
+        }
+
+        @media not print {
+
+            .only-print,
+            .only-print * {
+                display: none !important;
+            }
+        }
+
+        @media only print {
+            :root {
+                --fontSize: 12pt;
+            }
+
+            html {
+                background: none;
+            }
+
+            body {
+                padding-bottom: 0;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                page-break-after: avoid;
+            }
+
+            h1+p,
+            h2+p,
+            h3+p,
+            h4+p {
+                page-break-before: avoid;
+            }
+
+            p {
+                page-break-inside: avoid;
+            }
+
+            .logos img {
+                height: calc(var(--lineHeight) * 2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <r-grid columns=8>
+            <r-cell span-s="row" span="1-2">
+                <aside>
+                    <p class="h2 only-screen right only-screen only-large-window" aria-hidden="true">
+                        ↗︎
+                    </p>
+                    <p class="small low-contrast">
+                        Auf dieser Seite finden sich die Empfehlungen von mehreren zivil&shy;gesellschaftlichen
+                        Organisationen, die sich für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen
+                        einsetzen. Beides ist in Zeiten von Krisen wichtiger denn je.
+                    </p>
+
+                    <p class="only-print h5">
+                        Jetzt mitzeichnen: E-Mail an <u>hello@superrr.net</u>.
+                    </p>
+
+                    <r-grid columns-s="6" class="only-screen">
+                        <r-cell span="row" span-s="2+4">
+                            <p>
+                                <a href="mailto:hello@superrr.net" class="button" role="button">Jetzt mitzeichnen</a>
+                            </p>
+                        </r-cell>
+                    </r-grid>
+
+                    <p class="small low-contrast">
+                        Die zeichnenden Organisationen sind am Ende des Textes aufgeführt.
+                    </p>
+                </aside>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+                <h1 class="h2">
+                    Der Aufbau eines gemeinwohl&shy;orientierten digitalen Ökosystems muss endlich politische Priorität
+                    bekommen!
+                </h1>
+
+                <p>
+                    In Krisensituationen zeigt sich die Bedeutung von unabhängigen und belastbaren digitalen
+                    Infrastrukturen, die es Menschen, Organisationen und Firmen ermöglichen, ihren alltäglichen Aufgaben
+                    nachzukommen. Von den Umstellungen zur Eindämmung von Covid-19 haben bislang vor allem die großen
+                    Technologiekonzerne profitiert: Die Verlagerung des Lebens in die digitale Sphäre beschert ihnen
+                    größere Marktanteile, wachsende Nutzungszahlen und immer größere Datensammlungen.
+                    Um in in Zeiten von Krisen nicht von ihnen abhängig zu sein, braucht es ein aktives digitales
+                    Ökosystem, das echte Wahlmöglichkeiten bietet.
+                </p>
+
+                <p>
+                    Seit vielen Jahren entwickeln zivilgesellschaftliche Organisationen, Sozialunternehmen und
+                    Freiwillige digitale Werkzeuge, Infrastruktur und Policy-Empfehlungen für eine nachhaltige und
+                    zukunftsfähige Digitalisierung: von freiem Zugang zum Internet durch Initiativen für freie
+                    Funknetze, der Bereitstellung von sicheren Kommunikationswegen, Angeboten zu Freiem Wissen bis hin
+                    zu Open-Data-Anwendungen, die Bürgerinnen und Bürgern Zugang zu Informationen geben. Diese Ansätze
+                    folgen gemeinschaftlichen Werten wie Freiheit, Offenheit und Transparenz, und genau darin liegt ihr
+                    gesellschaftlicher Mehrwert. Bisher erhalten sie dafür noch nicht genug Unterstützung von
+                    öffentlicher Seite.
+                </p>
+
+                <p class="h4">
+                    Erst zivilgesellschaftliches Engagement macht digitale Infrastruktur wirklich resilient.
+                </p>
+
+                <p>
+                    Ihr volles Potenzial kann die digitale Zivilgesellschaft nur dann entfalten, wenn Politik nicht nur
+                    punktuell in
+                    Krisensituationen unterstützt, sondern langfristig und nachhaltig zivilgesellschaftliches Engagement
+                    und
+                    den
+                    Aufbau eines gemeinwohlorientieren digitalen Ökosystems fördert.
+                </p>
+
+                <p>
+                    Wir wenden uns daher mit folgenden Empfehlungen an die Politik:
+                </p>
+            </r-cell>
+
+            <r-cell span="2" class="h2 only-screen only-large-window">
+                <aside class="right" aria-hidden="true">Ⅰ</aside>
+            </r-cell>
+
+            <r-cell span-s="row" span="3-7">
+                <h2 class="stroke">
+                    Weitere Öffnung der Digitalpolitik für gesellschaftlichen Input
+                </h2>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+                <p>
+                    Digitalpolitik, die das Gemeinwohl ins Zentrum stellt, lässt sich nur gemeinsam mit
+                    gesellschaftlichen Akteurinnen, Akteuren und Initiativen verwirklichen. Hierfür muss die Politik
+                    sich noch weiter für Vorschläge aus der Gesellschaft öffnen und diese in die Politikgestaltung
+                    miteinbeziehen. Dazu braucht es die Anerkennung zivilgesellschaftlicher Expertise und ein klares
+                    Bekenntnis, deren Wissen und Kompetenzen für die Politikgestaltung zu nutzen.
+                </p>
+            </r-cell>
+
+            <r-cell span="2" class="h2 only-screen only-large-window">
+                <aside class="right" aria-hidden="true">Ⅱ</aside>
+            </r-cell>
+            <r-cell span-s="row" span="3-8">
+                <h2 class="second stroke">
+                    Gezielte Förderung
+                </h2>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+                <p>
+                    Die digitale Zivilgesellschaft ist nur durch das ehrenamtliche Engagement und die Spenden von
+                    Bürgerinnen und
+                    Bürgern arbeitsfähig. Gerade in Krisensituationen brechen diese Stützpfeiler schnell weg und
+                    bedrohen
+                    die
+                    Existenz von Vereinen, Stiftungen und Initiativen.
+                </p>
+
+                <p>
+                    In Deutschland mangelt es an niedrigschwelliger finanzieller Unterstützung für Organisationen
+                    und
+                    Sozialunternehmen aus der digitalen Zivilgesellschaft. Es braucht neue Fördermechanismen, die
+                    den Aufbau
+                    nachhaltiger Strukturen unterstützen und nicht nur Innovation im Blick haben, sondern auch die
+                    Instandhaltung
+                    und Weiterentwicklung bestehender Technologien. Möglich wäre eine solche Förderung
+                    beispielsweise durch
+                    eine vom
+                    Bund geförderte Stiftung öffentlichen Rechts, die Entwicklung, Wartung und Bereitstellung
+                    digitaler
+                    Technologien
+                    für die Gesellschaft fördert.
+                </p>
+            </r-cell>
+
+            <r-cell span="2" class="h2 only-screen only-large-window">
+                <aside class="right" aria-hidden="true">Ⅲ</aside>
+            </r-cell>
+            <r-cell span-s="row" span="3-8">
+                <h2 class="third stroke">
+                    Öffentliches&nbsp;Geld, Öffentliches&nbsp;Gut
+                </h2>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+
+                <p>
+                    Es braucht rechtliche Grundlagen, die es verpflichtend machen, dass mit öffentlichen Geldern
+                    erarbeitete Inhalte offen zugänglich und weiterverwendbar gemacht werden. Der Datenschutz muss dabei
+                    immer gewahrt sein.
+                </p>
+
+                <p>
+                    Dazu gehören: öffentlich finanzierte Software, Datenbestände und Informationen öffentlicher
+                    Stellen,
+                    Forschungs-
+                    und Bildungsinhalte öffentlich getragener Institutionen sowie die Inhalte des
+                    öffentlich-rechtlichen
+                    Rundfunks.
+                </p>
+            </r-cell>
+
+            <r-cell span="2" class="h2 only-screen only-large-window">
+                <aside class="right" aria-hidden="true">Ⅳ</aside>
+            </r-cell>
+            <r-cell span-s="row" span="3-8">
+                <h2 class="fourth stroke">
+                    Entwicklung öffentlicher digitaler Infrastruktur
+                </h2>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+
+                <p>
+                    Wir empfehlen kontinuierliche staatliche Investitionen in die Entwicklung und Instandhaltung
+                    digitaler Infrastruktur und den Aufbau widerstandsfähiger Netze.
+                </p>
+
+                <p>
+                    Wir fordern die Förderung von Dezentralisierung und einem breiten Ökosystem von Betreibern digitaler
+                    Infrastruktur, um digitale Souveränität zu erlangen und Abhängigkeiten von einzelnen Anbietern
+                    aufzulösen, durch den Abbau von Betreibermonopolen sowie dem konsequenten Einsatz von offenen
+                    Standards, Freier- und Open-Source-Software-Technologien.
+                </p>
+            </r-cell>
+            <r-cell span-s="row" span="3-7">
+                <p>
+                    Unterzeichnende Organisationen:
+                </p>
+            </r-cell>
+            <r-cell span-s="row" span="row" class="logos">
+                <a href="https://fsfe.org">
+                    <img width="200" style="transform: translateY(-8%);" src="logos/fsfe.png"
+                        title="Free Software Foundation Europe" />
+                </a>
+                <a href="https://digitalegesellschaft.de">
+                    <img width="200" style="transform: translateY(3%);" src="logos/digiges.png"
+                        title="Digitale Gesellschaft" />
+                </a>
+                <a href="https://epicenter.works">
+                    <img width="200" style="transform: translateY(6%);" src="logos/ew.png" title="Epicenter.Works" />
+                </a>
+                <a href="https://ccc.de">
+                    <img width="200" style="transform: scale(1.1);" src="logos/ccc.png" title="Chaos Computer Club" />
+                </a>
+                <a href="https://superrr.net">
+                    <img width="200" src="logos/superrr-placeholder.jpeg" title="Superrr Labs" />
+                </a>
+                <a href="https://d-64.org">
+                    <img width="200" src="logos/d64.png" title="D64 – Zentrum für digitalen Fortschritt" />
+                </a>
+            </r-cell>
+            <hr class="only-screen">
+        </r-grid>
+    </article>
+    <details class="only-screen low-contrast">
+        <summary>
+            Impressum
+        </summary>
+        <r-grid columns="8" columns-s="2">
+            <r-cell span="row"></r-cell>
+            <r-cell span-s="1" span="1+2">
+                <p class="small">Angaben gemäß §5 TMG</p>
+                <p class="small">
+                    Superrr Lab SL GmbH<br>
+                    Oranienstraße 58a<br>
+                    10969 Berlin
+                </p>
+            </r-cell>
+            <r-cell span-s="2" span="3+2">
+                <p class="small">
+                    <strong>Vertreten durch:</strong><br>
+                    Julia Kloiber<br>
+                    Elisa Lindinger
+                </p>
+            </r-cell>
+            <r-cell span-s="2" span="5+3">
+                <p class="small">
+                    <strong>Registereintrag:</strong><br>
+                    Eintragung im Handelsregister.<br>
+                    Registergericht: Berlin<br>
+                    Registernummer: HRB&nbsp;207856&nbsp;B
+                </p>
+            </r-cell>
+        </r-grid>
+    </details>
+</body>
+
+</html>
