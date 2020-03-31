@@ -25,7 +25,7 @@
             --dark-green: rgb(18, 168, 126);
             --light-gray: #f3f3f3;
 
-            --fontSize: calc(100vw / 64);
+            --fontSize: calc(100vw / 60);
             --lineHeight: calc(var(--fontSize) * 1.5);
         }
 
@@ -100,7 +100,7 @@
             top: 1px;
             left: -15px;
             height: calc(var(--lineHeight) * 2);
-            width: 100%;
+            width: 90%;
             position: absolute;
             z-index: -1;
 
@@ -121,7 +121,18 @@
         blockquote {
             background: var(--light-gray);
             border-left: var(--hrThickness) solid var(--green);
-            padding: calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2);
+            padding: calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2) calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2 - var(--hrThickness));
+        }
+
+        @media only screen and (max-width: 600px) {
+            blockquote {
+                padding-right: calc(var(--lineHeight) * 1.5);
+            }
+
+            blockquote a {
+                word-wrap: unset;
+                white-space: unset;
+            }
         }
 
         blockquote p:first-child,
@@ -247,7 +258,7 @@
 
 <body>
     <article>
-        <r-grid columns=8>
+        <r-grid columns-s="1" columns=8>
             <r-cell span-s="row" span="1-2">
                 <aside>
                     <p class="h2 only-screen right only-screen only-large-window" aria-hidden="true">
@@ -263,8 +274,8 @@
                         Jetzt mitzeichnen: E-Mail an <u>hello@superrr.net</u>.
                     </p>
 
-                    <r-grid columns-s="6" class="only-screen">
-                        <r-cell span="row" span-s="2+4">
+                    <r-grid class="only-screen">
+                        <r-cell span="row" span-s="row">
                             <p>
                                 <a href="mailto:hello@superrr.net" class="button" role="button">Jetzt mitzeichnen</a>
                             </p>
@@ -312,9 +323,9 @@
                     an dezentraler und damit widerstandsfähiger digitaler Infrastruktur arbeiten und so die Grundlage
                     dafür schaffen, dass wir in der nächsten Krise besser aufgestellt sind. Sie arbeiten an freiem
                     Zugang zum Internet wie die Initiativen für freie Funknetze, der Bereitstellung von sicheren
-                    Kommunikationswegen, Angeboten zu Freiem Wissen bis hin zu Open-Data- und Freien-Software
-                    Anwendungen. Bisher erhalten sie dafür noch nicht genug Unterstützung von öffentlicher Seite. Jetzt
-                    liegt es an der Politik, auf sie zuzugehen und sie zu unterstützen.
+                    Kommunikationswegen, Angeboten zu Freiem Wissen bis hin zu Open-Data- und
+                    Freien-Software-Anwendungen. Bisher erhalten sie dafür noch nicht genug Unterstützung von
+                    öffentlicher Seite. Jetzt liegt es an der Politik, auf sie zuzugehen und sie zu unterstützen.
                 </p>
 
                 <p>
@@ -324,13 +335,13 @@
                 </p>
             </r-cell>
 
-            <r-cell span="2" class="h2 only-screen only-large-window">
+            <r-cell span-s="row" span="2" class="h2 only-screen only-large-window">
                 <aside class="right" aria-hidden="true">Ⅰ</aside>
             </r-cell>
 
             <r-cell span-s="row" span="3-7">
                 <h2 class="stroke">
-                    Öffnung der Digitalpolitik für gesellschaftlichen Input
+                    Öffnung der Digitalpolitik für gesellschaft&shy;lichen Input
                 </h2>
             </r-cell>
             <r-cell span-s="row" span="3-7">
@@ -343,7 +354,7 @@
                 </p>
             </r-cell>
 
-            <r-cell span="2" class="h2 only-screen only-large-window">
+            <r-cell span-s="row" span="2" class="h2 only-screen only-large-window">
                 <aside class="right" aria-hidden="true">Ⅱ</aside>
             </r-cell>
             <r-cell span-s="row" span="3-8">
@@ -368,12 +379,12 @@
                 </p>
             </r-cell>
 
-            <r-cell span="2" class="h2 only-screen only-large-window">
+            <r-cell span-s="row" span="2" class="h2 only-screen only-large-window">
                 <aside class="right" aria-hidden="true">Ⅲ</aside>
             </r-cell>
             <r-cell span-s="row" span="3-8">
                 <h2 class="third stroke">
-                    Öffentliches&nbsp;Geld, Öffentliches&nbsp;Gut
+                    Öffentliches Geld, Öffentliches Gut
                 </h2>
             </r-cell>
             <r-cell span-s="row" span="3-7">
@@ -389,7 +400,7 @@
                 </p>
             </r-cell>
 
-            <r-cell span="2" class="h2 only-screen only-large-window">
+            <r-cell span-s="row" span="2" class="h2 only-screen only-large-window">
                 <aside class="right" aria-hidden="true">Ⅳ</aside>
             </r-cell>
             <r-cell span-s="row" span="3-8">
@@ -419,7 +430,10 @@
                         mitgestalten kann und wer abgehängt wird.
                     </p>
                     <footer>
-                        Elisa Lindinger & Julia Kloiber, <a href="https://superrr.net">Superrr Lab</a>
+                        Elisa Lindinger & Julia Kloiber, Geschäftsführerinnen,
+                        <a href="https://superrr.net">
+                            Superrr Lab
+                        </a>
                     </footer>
                 </blockquote>
             </r-cell>
@@ -432,7 +446,7 @@
                     <footer>
                         Stefan Heumann & Anna Wohlfarth, Vorstand,
                         <a href="https://www.stiftung-nv.de">
-                            Stiftung&nbsp;Neue&nbsp;Verantwortung&nbsp;e.&nbsp;V.
+                            Stiftung Neue Verantwortung e.&nbsp;V.
                         </a>
                     </footer>
                 </blockquote>
