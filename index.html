@@ -172,15 +172,18 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: baseline;
+            align-items: center;
             justify-content: center;
 
             overflow: hidden;
         }
 
-        .logos img {
-            height: calc(var(--lineHeight) * 3);
+        .logos {
+            --multiplier: 1;
+        }
 
+        .logos img {
+            height: calc(var(--lineHeight) * 3 * var(--multiplier));
             max-height: 150px;
             padding: calc(var(--lineHeight) * 1.5);
             margin: 0;
@@ -189,7 +192,7 @@
 
         @media only screen and (max-width: 600px) {
             .logos img {
-                height: calc(var(--lineHeight) * 2);
+                height: calc(var(--lineHeight) * 2 * var(--multiplier));
                 padding: calc(var(--lineHeight) * 0.75);
             }
         }
@@ -599,10 +602,8 @@
                     <img width="200" style="transform: translateY(-2%);" src="/logos/sef.png"
                         title="Stiftung Erneuerbare Freiheit" />
                 </a>
-                <a href="https://verstehbahnhof.de">
-                    <img width="200"
-                        style="margin-left: calc(var(--lineHeight) * -2); margin-right: calc(var(--lineHeight) * -2); transform: scale(0.8) translateY(-5%);"
-                        src="/logos/verstehbahnhof.png" title="Verstehbahnhof" />
+                <a href="https://verstehbahnhof.de" style="--multiplier: 0.7;">
+                    <img width="200" src="/logos/verstehbahnhof.png" title="Verstehbahnhof" />
                 </a>
                 <a href="https://goethe.de">
                     <img width="200" style="transform: scale(1.1);" src="/logos/gi.png" title="Goethe Institut" />
@@ -610,10 +611,8 @@
                 <a href="https://opendata.ch">
                     <img width="200" style="" src="/logos/odch.png" title="Opendata.ch" />
                 </a>
-                <a href="https://retune.de">
-                    <img width="200"
-                        style="margin-left: calc(var(--lineHeight) * -2); margin-right: calc(var(--lineHeight) * -2); transform: scale(0.8) translateY(-5%);"
-                        src="/logos/retune.png" title="Retune" />
+                <a href="https://retune.de" style="--multiplier: 0.55;">
+                    <img width="200" src="/logos/retune.png" title="Retune" />
                 </a>
                 <a href="https://digitale-freiheit.jetzt">
                     <img width="200" style="" src="/logos/df.png" title="Digitale Freiheit" />
@@ -622,10 +621,8 @@
                     <img width="200" style="transform: scale(1.15);" src="/logos/bib.png"
                         title="Berufsverband Information Bibliothek" />
                 </a>
-                <a href="https://linuxmuster.net">
-                    <img width="200"
-                        style="margin-left: calc(var(--lineHeight) * -5); margin-right: calc(var(--lineHeight) * -5); transform: scale(0.5) translateY(-5%);"
-                        src="/logos/lm.png" title="linuxmuster.net" />
+                <a href="https://linuxmuster.net" style="--multiplier: 0.5;">
+                    <img width="200" src="/logos/lm.png" title="linuxmuster.net" />
                 </a>
                 <a href="https://ehrenamt.de">
                     <img width="200" style="" src="/logos/aed.png" title="Akademie für Ehrenamtlichkeit Deutschland" />
@@ -635,6 +632,22 @@
                 </a>
                 <a href="https://berlin.bits-und-baeume.org">
                     <img width="200" style="transform: scale(1.2);" src="/logos/bub-berlin.png" title="Bits & Bäume" />
+                </a>
+                <a href="https://digitalmediawomen.de">
+                    <img width="200" style="" src="/logos/dmw.png" title="Digital Media Women" />
+                </a>
+                <a href="https://publicbeta.ch">
+                    <img width="200" style="" src="/logos/pb.png" title="PublicBeta" />
+                </a>
+                <a href="http://privacyweek.berlin/">
+                    <img width="200" style="" src="/logos/pw.png" title="Privacy Week Berlin" />
+                </a>
+                <a href="https://nodeforum.org/">
+                    <img width="200" style="" src="/logos/node.png"
+                        title="NODE Verein zur Förderung Digitaler Kultur" />
+                </a>
+                <a href="https://bildungscent.de" style="--multiplier: 0.4;">
+                    <img width="200" src="/logos/bildungscent.png" title="BildungsCent" />
                 </a>
             </r-cell>
             <hr class="only-screen">
