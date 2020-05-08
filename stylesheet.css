@@ -49,7 +49,7 @@ a:hover {
     border-color: black;
     border-style: solid;
     border-radius: 8px;
-    padding: calc(var(--lineHeight) - 3px);
+    padding: calc(var(--lineHeight) - 3px) calc(var(--lineHeight) / 2 - 3px);
     text-decoration: none;
     transition: background-color 0.2s, border-color 0.2s;
 }
@@ -139,6 +139,17 @@ blockquote:lang(de) p:first-child::before {
 blockquote:lang(de) p:last-of-type::after {
     content: '“';
     margin-left: -.25rem;
+}
+
+blockquote:lang(fr) p:first-child::before {
+    content: '«';
+    position: absolute;
+    left: -.72rem;
+}
+
+blockquote:lang(fr) p:last-of-type::after {
+    content: '»';
+    margin-left: -.15rem;
 }
 
 blockquote p {
