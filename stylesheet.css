@@ -373,11 +373,12 @@ a.button:hover {
 
 .quote figcaption a {
     white-space: normal;
+    display: inline-block;
 }
 
 @media only screen and (min-width: 601px) {
     .quote:nth-child(2n+1) {
-        margin-top: calc(var(--lineHeight) * 4);
+        margin-top: calc(var(--lineHeight) * 5);
     }
 }
 
@@ -448,6 +449,8 @@ blockquote:lang(de) p:first-child::before {
 blockquote:lang(de) p:last-of-type::after {
     content: '“';
     margin-left: -.25rem;
+    display: inline-block;
+    width: 0;
 }
 
 blockquote:lang(fr) p:first-child::before {
