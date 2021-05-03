@@ -469,6 +469,11 @@ blockquote p {
     font-variation-settings: 'slnt' -4;
 }
 
+blockquote em {
+    font-style: normal;
+    font-variation-settings: 'slnt' -10;
+}
+
 blockquote footer {
     font-weight: 500;
     font-size: .85rem;
