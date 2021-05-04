@@ -2,6 +2,8 @@
     --green: rgb(2, 252, 183);
     --dark-green: rgb(18, 168, 126);
     --light-gray: #f3f3f3;
+    --gray: #AAC;
+    --dark-gray: #335;
     --fontSize: calc(100vw / 60);
     --lineHeight: calc(var(--fontSize) * 1.5);
     --white: #FFFFFF;
@@ -91,6 +93,12 @@ h3, .h3 {
     -webkit-text-fill-color: transparent;
 }
 
+.gradient.blue {
+    background: linear-gradient(120deg, #00B7FF 10%, #8500FF 190%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .gradient.blink {
     background: linear-gradient(45deg, #00B7FF 20%, #8CB1FC 50%, #FCC5F9 80%);
     -webkit-background-clip: text;
@@ -118,10 +126,28 @@ svg {
     display: inline-block;
 }
 
+.eyebrow {
+    font-size: calc(var(--lineHeight) * 0.66);
+    line-height: calc(var(--lineHeight) * 1);
+    margin-top: calc(var(--lineHeight) * 0.75);
+    margin-bottom: calc(var(--lineHeight) * 0.25);
+    color: var(--gray);
+    font-variation-settings: "wght" 500;
+}
+
 @media only screen and (min-width: 601px) {
-    #first-h1 {
+    #header {
         margin-top: calc(var(--lineHeight) * 7)
     }
+
+    #header h1 {
+        margin-top: unset;
+    }
+}
+
+#join {
+    margin-top: calc(var(--lineHeight) * 1);
+    margin-bottom: calc(var(--lineHeight) * 1);
 }
 
 #banner {
@@ -145,7 +171,7 @@ svg {
 }
 
 @media only screen and (max-width: 600px) {
-    #first-h1 {
+    #header {
         margin: 0;
     }
 
@@ -245,7 +271,7 @@ svg {
     width: calc(var(--baseline) * 8.15 * 2);
 }
 
-#signatories {
+#signatories, #quotes {
     text-align: center;
 }
 
@@ -295,11 +321,14 @@ p {
 
 
 a.button {
+    --primary-color: #00B7FF;
+    --secondary-color: #8500FF;
+
     display: block;
     text-align: center;
     text-decoration: none;
     color: white;
-    background: linear-gradient(182deg, #00B7FF 20%, #8500FF 200%);
+    background: linear-gradient(150deg, var(--primary-color) 20%, var(--secondary-color) 200%);
     padding: calc(var(--lineHeight) / 4);
     border-radius: 100000px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 2px 10px 0px;
@@ -311,7 +340,17 @@ a.button {
 }
 
 a.button:hover {
-    background: linear-gradient(182deg, #00B7FF 00%, #8500FF 180%);
+    background: linear-gradient(150deg, var(--primary-color) 0%, var(--secondary-color) 180%);
+}
+
+a.orange {
+    --primary-color: #FF8800;
+    --secondary-color: #DD4400;
+}
+
+a.green {
+    --primary-color: #2CDA85;
+    --secondary-color: #00A638;
 }
 
 .stroke {
@@ -377,7 +416,7 @@ a.button:hover {
 }
 
 @media only screen and (min-width: 601px) {
-    .quote:nth-child(2n+1) {
+    .quote + .quote {
         margin-top: calc(var(--lineHeight) * 5);
     }
 }
@@ -519,7 +558,7 @@ blockquote footer {
 
 @media screen {
     .low-contrast {
-        color: #444;
+        color: var(--dark-gray);
     }
 }
 
