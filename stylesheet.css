@@ -171,8 +171,9 @@ svg {
 }
 
 @media only screen and (max-width: 600px) {
-    #header {
-        margin: 0;
+    #header h1 {
+        margin-top: unset;
+        margin-bottom: unset;
     }
 
     #image-blocks {
