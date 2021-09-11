@@ -135,6 +135,10 @@ svg {
     font-variation-settings: "wght" 500;
 }
 
+.eyebrow + h1 {
+    margin-top: unset;
+}
+
 @media only screen and (min-width: 601px) {
     #header {
         margin-top: calc(var(--lineHeight) * 7)
@@ -312,6 +316,79 @@ svg {
     max-width: calc(var(--baseline) * 20.18 * 2);
 }
 
+.hidden {
+    display: none;
+}
+
+.has-dialog {
+  overflow: hidden !important;
+}
+
+[role=dialog] {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    padding: calc(var(--lineHeight) * 2);
+    padding-bottom:calc(var(--lineHeight) * 3)
+}
+
+@media only screen and (max-width: 600px) {
+    [role=dialog] {
+        padding: var(--lineHeight);
+        padding-bottom:calc(var(--lineHeight) * 2)
+    }
+}
+
+[role=dialog] {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.98);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    margin-bottom: 0;
+
+    margin-left: env(safe-area-inset-left);
+    margin-right: env(safe-area-inset-right);
+
+    /* padding: calc(var(--lineHeight)*2); */
+    /* padding-bottom: calc(var(--lineHeight)*3); */
+
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.button-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-list .button {
+    display: inline-block;
+
+    margin-left: 0;
+    margin-right: calc(var(--lineHeight) / 2);
+    padding-left: calc(var(--lineHeight) );
+    padding-right: calc(var(--lineHeight) );
+
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav > * {
+    margin-right: calc(var(--lineHeight) / 2);
+}
+
+nav > *:last-child {
+    margin-right: unset;
+}
+
 a:hover {
     color: var(--accent-color)
 }
@@ -319,7 +396,6 @@ a:hover {
 p {
     hyphens: manual;
 }
-
 
 a.button {
     --primary-color: #00B7FF;
@@ -334,10 +410,10 @@ a.button {
     border-radius: 100000px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 2px 10px 0px;
     font-size: 0.75rem;
-    margin-bottom: calc(var(--lineHeight) / 4);
-    margin-left: calc(var(--lineHeight) / -4);
-    margin-left: calc(var(--lineHeight) / -4);
-    margin-top: calc(var(--lineHeight) / 4);
+    margin-bottom: calc(var(--lineHeight) / 2);
+    margin-left: calc(var(--lineHeight) / -8);
+    margin-right: calc(var(--lineHeight) / -8);
+    margin-top: calc(var(--lineHeight) / 2);
 }
 
 a.button:hover {

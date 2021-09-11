@@ -25,11 +25,80 @@
     <link rel="icon" href="/favicon.svg">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="mask-icon" href="/mask-icon.svg" color="#000000">
+
+    <script src="/js/dialog.js"></script>
 </head>
 
 <body>
     <article>
+        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-digitalvisionen" class="hidden">
+            <r-cell span="row">
+                <nav>
+                    <a role="button" class="nav-button" onclick="closeDialog(this)">
+                        Digitalvisionen
+                    </a>
+                    <a role="button" class="nav-button" onclick="replaceDialog('menu-wahlpruefsteine')">
+                        Wahlprüfsteine
+                    </a>
+                </nav>
+            </r-cell>
+            <r-cell span-s="row" span="1-6">
+                <h2 class="eyebrow">TODO: EYEBROW</h2>
+                <h1 class="h1">Digitalvisionen</h1>
+                <p class="low-contrast">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sit quam dicta tenetur nihil
+                    nostrum alias similique officiis debitis rem fugiat, sed at! Nulla facere rerum eum tempora
+                    asperiores.
+                </p>
+            </r-cell>
+            <r-cell class="button-list" span="row">
+                <a role="button" class="button" href="/todo">Inklusion</a>
+                <a role="button" class="button" href="/todo">Chancengleichheit</a>
+                <a role="button" class="button" href="/todo">KI Governance</a>
+                <a role="button" class="button" href="/todo">Digitale Bildung</a>
+                <a role="button" class="button" href="/todo">Freie Software</a>
+                <a role="button" class="button" href="/todo">Digitale Souveränität</a>
+                <a role="button" class="button" href="/todo">Partizipation</a>
+                <a role="button" class="button" href="/todo">Public Interest Internet</a>
+                <a role="button" class="button" href="/todo">Offene Daten</a>
+            </r-cell>
+        </r-grid>
+        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-wahlpruefsteine" class="hidden">
+            <r-cell span="row">
+                <nav>
+                    <a role="button" class="nav-button" onclick="replaceDialog('menu-digitalvisionen')">
+                        Digitalvisionen
+                    </a>
+                    <a role="button" class="nav-button" onclick="closeDialog(this)">
+                        Wahlprüfsteine
+                    </a>
+                </nav>
+            </r-cell>
+            <r-cell span-s="row" span="1-6">
+                <h2 class="eyebrow">TODO: EYEBROW</h2>
+                <h1 class="h1">Wahlprüfsteine</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sit quam dicta tenetur nihil
+                    nostrum alias similique officiis debitis rem fugiat, sed at! Nulla facere rerum eum tempora
+                    asperiores.
+                </p>
+            </r-cell>
+            <r-cell class="button-list" span="row">
+                <a role="button" class="button" href="/todo">Inklusion</a>
+                <a role="button" class="button" href="/todo">Chancengleichheit</a>
+            </r-cell>
+        </r-grid>
         <r-grid columns-s="1" columns="11">
+            <r-cell span="row">
+                <nav>
+                    <a role="button" class="nav-button" onclick="openDialog('menu-digitalvisionen', this)">
+                        Digitalvisionen
+                    </a>
+                    <a role="button" class="nav-button" onclick="openDialog('menu-wahlpruefsteine', this)">
+                        Wahlprüfsteine
+                    </a>
+                </nav>
+            </r-cell>
             <r-cell span-s="row" span="1-3" class="only-screen">
                 <aside class="instapaper_ignore">
                     <svg id="image-blocks" viewBox="0 0 1120 1015" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -262,7 +331,7 @@
                 <aside id="group-container" class="floating-container instapaper_ignore">
                     <svg id="image-group" viewBox="0 0 793 831" version="1.1" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
+                        role <defs>
                             <linearGradient x1="80.9889521%" y1="85.6818874%" x2="8.68846707%" y2="20.021319%"
                                 id="group-linearGradient-1">
                                 <stop stop-color="#7FA9FF" offset="0%"></stop>
