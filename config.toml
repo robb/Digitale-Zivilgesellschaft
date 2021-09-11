@@ -1,0 +1,4 @@
+baseURL = 'https://digitalezivilgesellschaft.org/'
+languageCode = 'de-DE'
+title = 'Digitale Zivilgesellschaft'
+disableKinds = ["taxonomy", "taxonomyTerm"]

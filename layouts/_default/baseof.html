@@ -1,0 +1,137 @@
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vier Forderungen für eine digital-souveräne Gesellschaft</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+    <meta name="twitter:card" content="summary" />
+    <meta content="https://digitalezivilgesellschaft.org/og_image.png" name="twitter:image" />
+    <meta property="og:url" content="https://digitalezivilgesellschaft.org" />
+    <meta property="og:title" content="Vier Forderungen für eine digital-souveräne Gesellschaft" />
+    <meta property="og:image" content="og_image.png" />
+    <meta property="og:description"
+        content="Empfehlungen der Zivilgesellschaft für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen einsetzen." />
+
+    <meta name="description"
+        content="Empfehlungen der Zivilgesellschaft für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen einsetzen." />
+
+    <link rel="canonical" href="https://digitalezivilgesellschaft.org">
+    <link rel="stylesheet" href="/raster/raster2.css">
+    <link rel="stylesheet" href="/stylesheet.css?akldhf">
+    <link rel="icon" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="mask-icon" href="/mask-icon.svg" color="#000000">
+
+    <script src="/js/dialog.js"></script>
+</head>
+
+<body>
+
+
+    <article>
+        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-digitalvisionen" class="hidden">
+            <r-cell span="row">
+                <nav>
+                    <a role="button" class="nav-button" onclick="closeDialog(this)">
+                        Digitalvisionen
+                    </a>
+                    <a role="button" class="nav-button" onclick="replaceDialog('menu-wahlpruefsteine')">
+                        Wahlprüfsteine
+                    </a>
+                </nav>
+            </r-cell>
+            <r-cell span-s="row" span="1-6">
+                <h2 class="eyebrow">TODO: EYEBROW</h2>
+                <h1 class="h1">Digitalvisionen</h1>
+                <p class="low-contrast">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sit quam dicta tenetur nihil
+                    nostrum alias similique officiis debitis rem fugiat, sed at! Nulla facere rerum eum tempora
+                    asperiores.
+                </p>
+            </r-cell>
+            <r-cell class="button-list" span="row">
+                {{ range where (where .Site.RegularPages "Type" "digitalvisionen") "File.Dir" "digitalvisionen/" }}
+                <a role="button" class="button" href="{{.Permalink}}">
+                    {{.Title}}
+                </a>
+                {{ end }}
+            </r-cell>
+        </r-grid>
+        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-wahlpruefsteine" class="hidden">
+            <r-cell span="row">
+                <nav>
+                    <a role="button" class="nav-button" onclick="replaceDialog('menu-digitalvisionen')">
+                        Digitalvisionen
+                    </a>
+                    <a role="button" class="nav-button" onclick="closeDialog(this)">
+                        Wahlprüfsteine
+                    </a>
+                </nav>
+            </r-cell>
+            <r-cell span-s="row" span="1-6">
+                <h2 class="eyebrow">TODO: EYEBROW</h2>
+                <h1 class="h1">Wahlprüfsteine</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sit quam dicta tenetur nihil
+                    nostrum alias similique officiis debitis rem fugiat, sed at! Nulla facere rerum eum tempora
+                    asperiores.
+                </p>
+            </r-cell>
+            <r-cell class="button-list" span="row">
+                {{ range where (where .Site.RegularPages "Type" "wahlpruefsteine") "File.Dir" "wahlpruefsteine/" }}
+                <a role="button" class="button" href="{{.Permalink}}">
+                    {{.Title}}
+                </a>
+                {{ end }}
+            </r-cell>
+        </r-grid>
+        <r-grid columns-s="1" columns="11">
+            {{ partial "menu.html" . }}
+            {{ block "main" . }}
+            {{ .Content }}
+            {{ end}}
+        </r-grid>
+    </article>
+    <details class="only-screen low-contrast">
+        <summary>
+            Impressum
+        </summary>
+        <r-grid columns="11" columns-s="2">
+            <r-cell span="row"></r-cell>
+            <r-cell span-s="1" span="1+3">
+                <p class="small">Angaben gemäß §5 TMG</p>
+                <p class="small">
+                    Superrr Lab SL gGmbH<br>
+                    Oranienstraße 58a<br>
+                    10969 Berlin
+                </p>
+            </r-cell>
+            <r-cell span-s="2" span="4+3">
+                <p class="small">
+                    <strong>Vertreten durch:</strong><br>
+                    Julia Kloiber<br>
+                    Elisa Lindinger
+                </p>
+
+                <p class="small">
+                    <strong>Illustrationen:</strong><br>
+                    <a href="https://www.annaniedhart.com">Anna Niedhart</a>
+                </p>
+            </r-cell>
+            <r-cell span-s="2" span="7+3">
+                <p class="small">
+                    <strong>Registereintrag:</strong><br>
+                    Eintragung im Handelsregister.<br>
+                    Registergericht: Berlin<br>
+                    Registernummer: HRB&nbsp;207856&nbsp;B
+                </p>
+            </r-cell>
+        </r-grid>
+    </details>
+</body>
+
+</html>
