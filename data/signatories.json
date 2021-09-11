@@ -1,0 +1,439 @@
+{
+    "list": [
+        {
+            "url": "https://superrr.net",
+            "multiplier": 1.25,
+            "logo": "/logos/superrr.png",
+            "name": "Superrr Labs"
+        },
+        {
+            "url": "https://www.betterplace-lab.org/en",
+            "multiplier": 1.1,
+            "logo": "/logos/bl.png",
+            "name": "betterplace lab"
+        },
+        {
+            "url": "https://fsfe.org",
+            "style": "translateY(-5%);",
+            "logo": "/logos/fsfe.png",
+            "name": "Free Software Foundation Europe"
+        },
+        {
+            "url": "https://digitalegesellschaft.de",
+            "style": "translateY(3%);",
+            "logo": "/logos/digiges.png",
+            "name": "Digitale Gesellschaft"
+        },
+        {
+            "url": "https://epicenter.works",
+            "style": "translateY(6%);",
+            "logo": "/logos/ew.png",
+            "name": "Epicenter.Works"
+        },
+        {
+            "url": "https://ccc.de",
+            "style": "scale(1.1);",
+            "logo": "/logos/ccc.png",
+            "name": "Chaos Computer Club"
+        },
+        {
+            "url": "https://wikimedia.de",
+            "style": "scale(1.2);",
+            "logo": "/logos/wmde.png",
+            "name": "Wikimedia Foundation"
+        },
+        {
+            "url": "https://www.send-ev.de",
+            "logo": "/logos/send.png",
+            "name": "Social Entrepreneurship Netzwerk Deutschland"
+        },
+        {
+            "url": "https://liqd.net/",
+            "multiplier": 0.33,
+            "logo": "/logos/liqd.png",
+            "name": "Liquid Democracy"
+        },
+        {
+            "url": "https://d-64.org",
+            "logo": "/logos/d64.png",
+            "name": "D64 – Zentrum für digitalen Fortschritt"
+        },
+        {
+            "url": "https://stiftung-nv.de",
+            "multiplier": 0.9,
+            "logo": "/logos/snv.png",
+            "name": "Stiftung Neue Verantwortung"
+        },
+        {
+            "url": "https://irights-lab.de",
+            "style-style": "d: scale(1.1) translateY(-4%);",
+            "logo": "/logos/irights.png",
+            "name": "iRights.Lab"
+        },
+        {
+            "url": "https://algorithmwatch.org",
+            "style": "margin-right: calc(var(--lineHeight) * -0.5);",
+            "logo": "/logos/aw.png",
+            "name": "Algorithm Watch"
+        },
+        {
+            "url": "https://fiff.de/",
+            "d-style": "d: scale(1.1);",
+            "logo": "/logos/fiff.png",
+            "name": "Forum InformatikerInnen für Frieden und gesellschaftliche Verantwortung"
+        },
+        {
+            "url": "https://okfn.de",
+            "d-style": "d: scale(1.15);",
+            "logo": "/logos/okfde.png",
+            "name": "Open Knowledge Foundation Deutschland"
+        },
+        {
+            "url": "https://www.globalinnovationgathering.org",
+            "multiplier": 0.95,
+            "logo": "/logos/gig.png",
+            "name": "Global Innovation Gathering"
+        },
+        {
+            "url": "https://www.ashoka.org/de-de",
+            "multiplier": 1,
+            "d-style": "d: scale(1.15);",
+            "logo": "/logos/ashoka.png",
+            "name": "Ashoka"
+        },
+        {
+            "url": "https://techcultivation.org",
+            "d-style": "d: scale(1.05);",
+            "logo": "/logos/cct.png",
+            "name": "Center for the Cultivation of Technology"
+        },
+        {
+            "url": "https://erneuerbare-freiheit.de",
+            "d-style": "d: translateY(-2%);",
+            "logo": "/logos/sef.png",
+            "name": "Stiftung Erneuerbare Freiheit"
+        },
+        {
+            "url": "https://verstehbahnhof.de",
+            "multiplier": 0.6,
+            "logo": "/logos/verstehbahnhof.png",
+            "name": "Verstehbahnhof"
+        },
+        {
+            "url": "https://goethe.de",
+            "d-style": "d: scale(1.1);",
+            "logo": "/logos/gi.png",
+            "name": "Goethe Institut"
+        },
+        {
+            "url": "https://ehrenamt.de",
+            "logo": "/logos/aed.png",
+            "name": "Akademie für Ehrenamtlichkeit Deutschland"
+        },
+        {
+            "url": "https://nodeforum.org/",
+            "multiplier": 1.1,
+            "logo": "/logos/node.png",
+            "name": "NODE Verein zur Förderung Digitaler Kultur"
+        },
+        {
+            "url": "https://dbjr.de/",
+            "d-style": "d: scale(1.2);",
+            "logo": "/logos/dbjr.png",
+            "name": "Deutscher Bundesjugendring"
+        },
+        {
+            "url": "https://youvo.org/",
+            "d-style": "d: translateY(8%);",
+            "logo": "/logos/youvo.png",
+            "name": "youvo"
+        },
+        {
+            "url": "https://opengovpartnership.de/",
+            "logo": "/logos/ogn.png",
+            "name": "Open Government Partnership"
+        },
+        {
+            "url": "https://citizensforeurope.eu/",
+            "logo": "/logos/cfe.png",
+            "name": "Citizens for Europe"
+        },
+        {
+            "url": "https://www.bundjugend.de",
+            "multiplier": 1.1,
+            "logo": "/logos/bj.png",
+            "name": "BUNDjugend"
+        },
+        {
+            "url": "https://www.b-b-e.de",
+            "multiplier": 1.1,
+            "logo": "/logos/bbe.png",
+            "name": "Bundesnetzwerk Bürgerschaftliches Engagement"
+        },
+        {
+            "url": "https://bundesverband-smart-city.org",
+            "multiplier": 1.05,
+            "logo": "/logos/bsc.png",
+            "name": "Bundesverband Smart City e.V."
+        },
+        {
+            "url": "https://gut.org",
+            "multiplier": 1,
+            "logo": "/logos/gut.png",
+            "name": "gut.org gAG"
+        },
+        {
+            "url": "https://neuland21.de",
+            "multiplier": 1.22,
+            "logo": "/logos/neu.png",
+            "name": "neuland 21 e. V."
+        },
+        {
+            "url": "https://selbstbestimmt-digital.de",
+            "multiplier": 0.7,
+            "logo": "/logos/sd.png",
+            "name": "Selbstbestimmt.Digital"
+        },
+        {
+            "url": "https://germanwatch.org",
+            "logo": "/logos/gw.png",
+            "name": "Germanwatch"
+        },
+        {
+            "url": "https://load-ev.de",
+            "multiplier": 1.25,
+            "logo": "/logos/load.png",
+            "name": "LOAD"
+        },
+        {
+            "url": "https://progressives-zentrum.org",
+            "multiplier": 1.4,
+            "logo": "/logos/pz.png",
+            "name": "Progressives Zentrum"
+        },
+        {
+            "url": "https://computertruhe.de",
+            "logo": "/logos/computertruhe.png",
+            "name": "Computertruhe"
+        },
+        {
+            "url": "https://www.fossgis-konferenz.de",
+            "logo": "/logos/fossgis.png",
+            "name": "FOSSGIS"
+        },
+        {
+            "url": "https://stiftung-ecken-wecken.de",
+            "logo": "/logos/sew.png",
+            "name": "Stiftung Ecken Wecken"
+        },
+        {
+            "url": "https://wechange.de",
+            "multiplier": 0.4,
+            "logo": "/logos/wechange.png",
+            "name": "WECHANGE"
+        },
+        {
+            "url": "https://www.buergermut.de",
+            "multiplier": 1.2,
+            "style": "scale(1.3);",
+            "logo": "/logos/bm.png",
+            "name": "Stiftung Bürgermut"
+        },
+        {
+            "url": "https://www.projecttogether.org",
+            "logo": "/logos/pt.png",
+            "name": "ProjectTogether"
+        },
+        {
+            "url": "https://www.ifa.de/",
+            "logo": "/logos/ifa.png",
+            "name": "Institut für Auslandsbeziehungen"
+        },
+        {
+            "url": "https://www.medialepfade.org/",
+            "logo": "/logos/mp.png",
+            "name": "mediale pfade"
+        },
+        {
+            "url": "https://www.do-foss.de/",
+            "logo": "/logos/do-foss.png",
+            "name": "Do-FOSS"
+        },
+        {
+            "url": "https://futureins.org",
+            "logo": "/logos/f1.png",
+            "name": "futur eins"
+        },
+        {
+            "url": "https://correlaid.org",
+            "multiplier": 1.1,
+            "logo": "/logos/correlaid.png",
+            "name": "CorrelAid e. V."
+        },
+        {
+            "url": "https://oknrw.de",
+            "multiplier": 0.6,
+            "logo": "/logos/oknrw.png",
+            "name": "Offene Kommunen.NRW Institut"
+        },
+        {
+            "url": "https://netzforma.org",
+            "multiplier": 1.1,
+            "logo": "/logos/netzforma.png",
+            "name": "netzforma* e. V."
+        },
+        {
+            "url": "https://www.europeanhub.org/",
+            "multiplier": 1.2,
+            "logo": "/logos/ehub.png",
+            "name": "European Hub for Civi Engagement"
+        },
+        {
+            "url": "https://zukunft-zwei.de/",
+            "multiplier": 0.6,
+            "logo": "/logos/z2.png",
+            "name": "Zukunft Zwei"
+        },
+        {
+            "url": "https://tincon.org",
+            "multiplier": 1.2,
+            "logo": "/logos/tincon.png",
+            "name": "TINCON e. V."
+        },
+        {
+            "url": "https://www.hostsharing.net/",
+            "multiplier": 0.6,
+            "logo": "/logos/hostsharing.png",
+            "name": "hostsharing"
+        },
+        {
+            "url": "https://digitalesberlin.info/",
+            "multiplier": 1.1,
+            "logo": "/logos/bdsb.png",
+            "name": "Bündnis digitale Stadt Berlin"
+        },
+        {
+            "url": "https://www.aktive-buergerschaft.de/",
+            "multiplier": 0.6,
+            "logo": "/logos/sab.png",
+            "name": "Stiftung Aktive Bürgerschaft"
+        },
+        {
+            "url": "https://luki.org/",
+            "multiplier": 1.25,
+            "logo": "/logos/luki.png",
+            "name": "Luki e. V."
+        },
+        {
+            "url": "https://reset.org/",
+            "multiplier": 0.55,
+            "logo": "/logos/reset.png",
+            "name": "Reset.org"
+        },
+        {
+            "url": "https://motif-institute.com/",
+            "multiplier": 0.55,
+            "logo": "/logos/motif.png",
+            "style": "translateY(0.5%);",
+            "name": "MOTIF Institut"
+        },
+        {
+            "url": "https://civitalis.eu/",
+            "multiplier": 0.8,
+            "logo": "/logos/civalis.png",
+            "name": "Civalis"
+        },
+        {
+            "url": "https://gesellschaft-digitale-ethik.org",
+            "multiplier": 0.66,
+            "logo": "/logos/gde.png",
+            "name": "Gesellschaft für digitale Ethik"
+        },
+        {
+            "url": "https://www.sciencedialogue.de",
+            "logo": "/logos/science-dialogue.png",
+            "name": "ScienceDialogue"
+        },
+        {
+            "url": "https://www.topio.info",
+            "logo": "/logos/topio.png",
+            "style": "translateY(5%);",
+            "name": "Topio e. V."
+        },
+        {
+            "url": "https://www.kjr-ohv.de/",
+            "multiplier": 1.25,
+            "logo": "/logos/kjr.png",
+            "name": "Kreisjugendring Oberhavel e. V."
+        },
+        {
+            "url": "https://emancipatory.technology/",
+            "logo": "/logos/zet.png",
+            "style": "translateY(-9%);",
+            "name": "Zentrum Emanzipatorische Technikforschung"
+        },
+        {
+            "url": "https://www.fzi.de/",
+            "multiplier": 1.1,
+            "logo": "/logos/fzi.png",
+            "name": "FZI Forschungszentrum Informatik"
+        },
+        {
+            "url": "https://www.k8.design/k8-start",
+            "logo": "/logos/k8.png",
+            "name": "K8 Institut für strategische Ästhetik"
+        },
+        {
+            "url": "https://www.freiwilligen-zentrum-augsburg.de/",
+            "multiplier": 1.2,
+            "logo": "/logos/fza.png",
+            "style": "translateY(-2%);",
+            "name": "Freiwilligen-Zentrum Augsburg"
+        },
+        {
+            "url": "https://www.digitale-engel.de/",
+            "multiplier": 1,
+            "logo": "/logos/de.png",
+            "style": "translateY(4%);",
+            "name": "Digitale Engel"
+        },
+        {
+            "url": "https://www.tech-life-balance.de/",
+            "multiplier": 1,
+            "logo": "/logos/tlb.png",
+            "style": "translateY(2%);",
+            "name": "Institute for Tech Life Balance"
+        },
+        {
+            "url": "https://daasi.de/",
+            "multiplier": 1.1,
+            "logo": "/logos/daasi.png",
+            "style": "translateY(4%);",
+            "name": "DAASI International"
+        },
+        {
+            "url": "https://dfja.eu/",
+            "multiplier": 1.2,
+            "logo": "/logos/dfja.png",
+            "name": "Deutsch-französischer Jugendaustausdienst"
+        },
+        {
+            "url": "https://www.kurdische-gemeinde.de/",
+            "multiplier": 1,
+            "logo": "/logos/kg.png",
+            "name": "Kurdische Gemeinde"
+        },
+        {
+            "url": "https://future-s.de/",
+            "multiplier": 0.666,
+            "logo": "/logos/fs.png",
+            "name": "Future_s"
+        },
+        {
+            "url": "https://stiftungdatenschutz.org/",
+            "multiplier": 1,
+            "logo": "/logos/sds.png",
+            "name": "Stiftung Datenschutz"
+        }
+    ]
+}
