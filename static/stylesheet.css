@@ -7,7 +7,10 @@
     --fontSize: calc(100vw / 60);
     --lineHeight: calc(var(--fontSize) * 1.5);
     --white: #FFFFFF;
-    --accent-color: #007aaa;
+    --accent-color: #00B7FF;
+
+    --gradient-color-1: #00B7FF;
+    --gradient-color-2: #8500FF;
 }
 
 html {
@@ -44,8 +47,15 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-     :root {
-        --fontSize: 16px;
+    :root {
+        --fontSize: 15px;
+        --h1-size: 2.45rem;
+        --h2-size: 2.1rem;
+        --h3-size: 1.2rem;
+        --h4-size: 1.1rem;
+
+        --columnGap: calc(var(--lineHeight));
+        --rowGap: var(--lineHeight);
     }
 }
 
@@ -71,45 +81,50 @@ h3, .h3 {
     font-style: normal;
 }
 
+.gradient-green {
+    --gradient-color-2: #00A638;
+    --gradient-color-1: #2CDA85;
+}
+
+.gradient-bleen {
+    --gradient-color-2: #0e89b9;
+    --gradient-color-1: #00F385;
+}
+
+.gradient-blue {
+    --gradient-color-1: #41c9ff;
+    --gradient-color-2: #8500FF;
+}
+
+.gradient-blink {
+    --gradient-color-1: #00B7FF;
+    --gradient-color-2: #FCC5F9;
+}
+
+.gradient-red {
+    --gradient-color-1: #F60;
+    --gradient-color-2: #E0B;
+}
+
 @media not print {
-.gradient {
-    background: linear-gradient(182deg, #00B7FF, #8500FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-variation-settings: 'wght' 750;
-    padding-right: 0.3rem;
-    margin-right: -0.3rem;
-}
+    h1 em, h2 em {
+        font-style: normal;
+        background: linear-gradient(182deg, var(--gradient-color-1) -5%, var(--gradient-color-2) 110%), var(--gradient-color-2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-variation-settings: 'wght' 750;
+        padding-right: 0.3rem;
+        margin-right: -0.3rem;
+    }
 
-.gradient.green {
-    background: linear-gradient(4deg, #00A638, #2CDA85);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    h1 em {
+        letter-spacing: -0.04em;
+    }
 
-.gradient.bleen {
-    background: linear-gradient(33deg, #00B7FF 0%, #00F385 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.gradient.blue {
-    background: linear-gradient(120deg, #00B7FF 10%, #8500FF 190%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.gradient.blink {
-    background: linear-gradient(45deg, #00B7FF 20%, #8CB1FC 50%, #FCC5F9 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.gradient.red {
-    background: linear-gradient(195deg, #FF8800 44%, #8866FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+    h2 em {
+        letter-spacing: -0.02em;
+    }
 }
 
 aside.instapaper_ignore {
@@ -141,7 +156,7 @@ svg {
 
 @media only screen and (min-width: 601px) {
     #header {
-        margin-top: calc(var(--lineHeight) * 7)
+        margin-top: calc(var(--lineHeight) * 4.5)
     }
 
     #header h1 {
@@ -170,7 +185,7 @@ svg {
 #image-blocks {
     width: calc(var(--baseline) * 11.2 * 2);
     margin-left: -1.5rem;
-    margin-top: 1.2rem;
+    margin-top: -1.2rem;
     transform: rotate(-8deg);
 }
 
@@ -181,10 +196,11 @@ svg {
     }
 
     #image-blocks {
-        margin-left: -1.5rem;
+        width: calc(var(--baseline) * 8 * 2);
+        margin-left: -0.25rem;
         margin-top: -0.5rem;
         margin-bottom: -1rem;
-        transform: rotate(15deg);
+        transform: rotate(10deg);
     }
 }
 
@@ -223,10 +239,10 @@ svg {
 }
 
 #group-container {
-    margin-right: -4rem;
+    margin-right: -2rem;
     width: calc(var(--baseline) * 7.93 * 2);
     height: calc(var(--baseline) * 7.93 * 2 + 4rem);
-    shape-outside: circle(calc(var(--baseline) * 9.5) at calc(var(--baseline) * 7.5) calc(var(--baseline) * 12.5));
+    shape-outside: circle(calc(var(--baseline) * 10) at calc(var(--baseline) * 7) calc(var(--baseline) * 12.5));
 }
 
 #image-group {
@@ -341,7 +357,7 @@ svg {
 
 [role=dialog] {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: white;
     top: 0;
     left: 0;
     right: 0;
@@ -360,6 +376,20 @@ svg {
     overflow-x: hidden;
 }
 
+@supports (-webkit-backdrop-filter: blur(15px)) {
+    [role=dialog] {
+        background-color: rgba(255, 255, 255, 0.88);
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    @media (prefers-contrast: more) {
+        [role=dialog] {
+            background-color: white;
+            -webkit-backdrop-filter: unset;
+        }
+    }
+}
+
 .button-list {
     display: flex;
     flex-wrap: wrap;
@@ -376,17 +406,52 @@ svg {
     text-transform: uppercase;
 }
 
+.has-dialog #main nav {
+    visibility: hidden;
+}
+
 nav {
+    font-size: 0.9rem;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 nav > * {
-    margin-right: calc(var(--lineHeight) / 2);
+    margin-left: calc(var(--lineHeight) / 2);
 }
 
-nav > *:last-child {
+nav > *:first-child {
     margin-right: unset;
+}
+
+.nav-button {
+    cursor: pointer;
+
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+    border-radius: 100000px;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color) !important;
+    letter-spacing: 0.01em;
+    font-weight: 450;
+
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 2px 10px 0px; */
+    font-size: 0.75rem;
+
+    padding-left: calc(var(--lineHeight) / 1.5);
+    padding-right: calc(var(--lineHeight) / 1.5);
+
+    text-decoration: none;
+
+    height: calc(var(--lineHeight) * 1.5);
+
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    user-select: none;
 }
 
 a:hover {
@@ -410,10 +475,13 @@ a.button {
     border-radius: 100000px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px, rgba(0, 0, 0, 0.08) 0px 2px 10px 0px;
     font-size: 0.75rem;
-    margin-bottom: calc(var(--lineHeight) / 2);
+    margin-bottom: calc(var(--lineHeight) / 4 + var(--lineHeight) / 8);
     margin-left: calc(var(--lineHeight) / -8);
     margin-right: calc(var(--lineHeight) / -8);
-    margin-top: calc(var(--lineHeight) / 2);
+    margin-top: calc(var(--lineHeight) / 8);
+    height: calc(var(--lineHeight) * 1.5);
+
+    box-sizing: border-box;
 }
 
 a.button:hover {

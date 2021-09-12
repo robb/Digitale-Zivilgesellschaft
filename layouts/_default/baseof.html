@@ -30,20 +30,10 @@
 </head>
 
 <body>
-
-
     <article>
-        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-digitalvisionen" class="hidden">
-            <r-cell span="row">
-                <nav>
-                    <a role="button" class="nav-button" onclick="closeDialog(this)">
-                        Digitalvisionen
-                    </a>
-                    <a role="button" class="nav-button" onclick="replaceDialog('menu-wahlpruefsteine')">
-                        Wahlprüfsteine
-                    </a>
-                </nav>
-            </r-cell>
+        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-digitalvisionen"
+            class="instapaper_ignore hidden">
+            {{ partial "menu.html" . }}
             <r-cell span-s="row" span="1-6">
                 <h2 class="eyebrow">TODO: EYEBROW</h2>
                 <h1 class="h1">Digitalvisionen</h1>
@@ -56,22 +46,14 @@
             <r-cell class="button-list" span="row">
                 {{ range where (where .Site.RegularPages "Type" "digitalvisionen") "File.Dir" "digitalvisionen/" }}
                 <a role="button" class="button" href="{{.Permalink}}">
-                    {{.Title}}
+                    {{.Params.Topic}}
                 </a>
                 {{ end }}
             </r-cell>
         </r-grid>
-        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-wahlpruefsteine" class="hidden">
-            <r-cell span="row">
-                <nav>
-                    <a role="button" class="nav-button" onclick="replaceDialog('menu-digitalvisionen')">
-                        Digitalvisionen
-                    </a>
-                    <a role="button" class="nav-button" onclick="closeDialog(this)">
-                        Wahlprüfsteine
-                    </a>
-                </nav>
-            </r-cell>
+        <r-grid aria-modal="true" role="dialog" columns-s="1" columns="11" id="menu-wahlpruefsteine"
+            class="instapaper_ignore hidden">
+            {{ partial "menu.html" . }}
             <r-cell span-s="row" span="1-6">
                 <h2 class="eyebrow">TODO: EYEBROW</h2>
                 <h1 class="h1">Wahlprüfsteine</h1>
@@ -84,31 +66,19 @@
             <r-cell class="button-list" span="row">
                 {{ range where (where .Site.RegularPages "Type" "wahlpruefsteine") "File.Dir" "wahlpruefsteine/" }}
                 <a role="button" class="button" href="{{.Permalink}}">
-                    {{.Title}}
+                    {{.Params.Topic}}
                 </a>
                 {{ end }}
             </r-cell>
         </r-grid>
-        <r-grid columns-s="1" columns="11">
+        <r-grid id="main" columns-s="1" columns="11">
             {{ partial "menu.html" . }}
             {{ block "main" . }}
             {{ .Content }}
             {{ end}}
 
-            <r-cell span-s="row" span="row">
-                <h3 id="signatories">Unterzeichnende Organisationen</h3>
-            </r-cell>
-            <r-cell span-s="row" span="row" class="logos">
-                {{ range $.Site.Data.signatories.list }}
-                <a href="{{ index .url }}" style='--multiplier: {{ .multiplier | default "unset" }};'>
-                    <img width="200" src="{{ .logo }}" title="{{ .name }}">
-                </a>
-                {{ end }}
-            </r-cell>
-            <r-cell span="row" class="small center">
-                Die Forderungen und unterzeichnenden Organisationen von 2020 findet Ihr auf <a
-                    href="https://2020.digitalezivilgesellschaft.org">2020.digitalezivilgesellschaft.org</a>.
-            </r-cell>
+            {{ block "footer" . }}
+            {{ end}}
         </r-grid>
     </article>
     <details class="only-screen low-contrast">

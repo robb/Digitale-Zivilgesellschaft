@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{.Content}}
+{{ end}}
+{{ define "footer" }}
+<r-cell span-s="row" span="row">
+    <h3 id="signatories">Unterzeichnende Organisationen</h3>
+</r-cell>
+<r-cell span-s="row" span="row" class="logos">
+    {{ range $.Site.Data.signatories.list }}
+    <a href="{{ index .url }}" style='--multiplier: {{ .multiplier | default "unset" }};'>
+        <img width="200" src="{{ .logo }}" title="{{ .name }}">
+    </a>
+    {{ end }}
+</r-cell>
+<r-cell span="row" class="small center">
+    Die Forderungen und unterzeichnenden Organisationen von 2020 findet Ihr auf <a
+        href="https://2020.digitalezivilgesellschaft.org">2020.digitalezivilgesellschaft.org</a>.
+</r-cell>
+{{ end}}

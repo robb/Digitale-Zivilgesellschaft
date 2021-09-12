@@ -1,10 +1,29 @@
-<r-cell span="row">
+<r-cell id="nav-container" span="row" class="desktop-only">
     <nav>
-        <a role="button" class="nav-button" onclick="openDialog('menu-digitalvisionen', this)">
+        {{ if ne .Page.RelPermalink "/" }}
+        <a tabindex="0" role="button" class="nav-button" href="/">
+            Startseite
+        </a>
+        {{ end }}
+
+        {{ if or (eq .Page.RelPermalink "/digitalvisionen/") (eq .Page.RelPermalink "/wahlpruefsteine/") }}
+        <a tabindex="0" role="button" class="nav-button" href="/digitalvisionen/">
             Digitalvisionen
         </a>
-        <a role="button" class="nav-button" onclick="openDialog('menu-wahlpruefsteine', this)">
+
+        <a tabindex="0" role="button" class="nav-button" href="/wahlpruefsteine/">
             Wahlprüfsteine
         </a>
+        {{ else }}
+        <a tabindex="0" role="button" class="nav-button"
+            onclick="return toggleDialog('#menu-digitalvisionen', this, '.button-list a')" href="/digitalvisionen/">
+            Digitalvisionen
+        </a>
+
+        <a tabindex="0" role="button" class="nav-button"
+            onclick="return toggleDialog('#menu-wahlpruefsteine', this, '.button-list a')" href="/wahlpruefsteine/">
+            Wahlprüfsteine
+        </a>
+        {{ end }}
     </nav>
 </r-cell>

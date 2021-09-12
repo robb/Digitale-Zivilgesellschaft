@@ -1,0 +1,18 @@
+{{ define "main" }}
+<r-cell span-s="row" span="1-6">
+    <h2 class="eyebrow">TODO: EYEBROW</h2>
+    <h1 class="h1">Digitalvisionen</h1>
+    <p class="low-contrast">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sit quam dicta tenetur nihil
+        nostrum alias similique officiis debitis rem fugiat, sed at! Nulla facere rerum eum tempora
+        asperiores.
+    </p>
+</r-cell>
+<r-cell class="button-list" span="row">
+    {{ range where (where .Site.RegularPages "Type" "digitalvisionen") "File.Dir" "digitalvisionen/" }}
+    <a role="button" class="button" href="{{.Permalink}}">
+        {{.Params.Topic}}
+    </a>
+    {{ end }}
+</r-cell>
+{{ end }}

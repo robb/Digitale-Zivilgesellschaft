@@ -255,7 +255,7 @@ aria.Utils = aria.Utils || {};
    *          first focusable element in the dialog will receive focus.
    */
   aria.Dialog = function (dialogId, focusAfterClosed, focusFirst) {
-    this.dialogNode = document.getElementById(dialogId);
+    this.dialogNode = document.querySelector(dialogId);
     if (this.dialogNode === null) {
       throw new Error('No element found with id="' + dialogId + '".');
     }
@@ -293,7 +293,7 @@ aria.Utils = aria.Utils || {};
     document.body.parentElement.classList.add(aria.Utils.dialogOpenClass);
 
     if (typeof focusAfterClosed === 'string') {
-      this.focusAfterClosed = document.getElementById(focusAfterClosed);
+      this.focusAfterClosed = document.querySelector(focusAfterClosed);
     }
     else if (typeof focusAfterClosed === 'object') {
       this.focusAfterClosed = focusAfterClosed;
@@ -304,7 +304,8 @@ aria.Utils = aria.Utils || {};
     }
 
     if (typeof focusFirst === 'string') {
-      this.focusFirst = document.getElementById(focusFirst);
+      this.focusFirst = this.dialogNode.querySelector(focusFirst);
+
     }
     else if (typeof focusFirst === 'object') {
       this.focusFirst = focusFirst;
@@ -334,7 +335,7 @@ aria.Utils = aria.Utils || {};
     this.addListeners();
     aria.OpenDialogList.push(this);
     this.clearDialog();
-    this.dialogNode.className = 'default_dialog'; // make visible
+    this.dialogNode.classList.remove('hidden');
 
     if (this.focusFirst) {
       this.focusFirst.focus();
@@ -367,7 +368,7 @@ aria.Utils = aria.Utils || {};
     this.removeListeners();
     aria.Utils.remove(this.preNode);
     aria.Utils.remove(this.postNode);
-    this.dialogNode.className = 'hidden';
+    this.dialogNode.classList.add('hidden');
     this.backdropNode.classList.remove('active');
     this.focusAfterClosed.focus();
 
@@ -400,7 +401,7 @@ aria.Utils = aria.Utils || {};
     this.removeListeners();
     aria.Utils.remove(this.preNode);
     aria.Utils.remove(this.postNode);
-    this.dialogNode.className = 'hidden';
+    this.dialogNode.classList.add('hidden');
     this.backdropNode.classList.remove('active');
 
     var focusAfterClosed = newFocusAfterClosed || this.focusAfterClosed;
@@ -448,9 +449,20 @@ aria.Utils = aria.Utils || {};
     var topDialog = aria.getCurrentDialog();
     if (topDialog.dialogNode.contains(document.activeElement) || document.activeElement == document.body) {
       topDialog.replace(newDialogId, newFocusAfterClosed, newFocusFirst);
-    } else {
-      console.log("womp", document.activeElement)
     }
   }; // end replaceDialog
 
+  window.toggleDialog = function (dialogId, focusAfterClosed, newFocusFirst) {
+    var topDialog = aria.getCurrentDialog();
+
+    if (topDialog == null) {
+      openDialog(dialogId, focusAfterClosed, newFocusFirst);
+    } else if (topDialog.dialogNode == document.querySelector(dialogId)) {
+      topDialog.close();
+    } else {
+      replaceDialog(dialogId, focusAfterClosed, newFocusFirst);
+    }
+
+    return false;
+  }; // end toggleDialoge
 }());
