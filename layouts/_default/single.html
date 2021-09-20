@@ -1,6 +1,6 @@
 {{ define "main" }}
 <r-cell span-s="row" span="3-10">
-    <h2 class="eyebrow">{{ .Params.Eyebrow }}</h2>
+    <h2 class="eyebrow">{{ .Params.Eyebrow | markdownify }}</h2>
     <h1>{{ .Title | markdownify }}</h1>
     {{ .Content }}
 </r-cell>

@@ -1,15 +1,15 @@
 :root {
     --green: rgb(2, 252, 183);
     --dark-green: rgb(18, 168, 126);
-    --light-gray: #f3f3f3;
+    --light-gray: #f3f3f7;
     --gray: #AAC;
-    --dark-gray: #335;
+    --dark-gray: #383858;
     --fontSize: calc(100vw / 60);
     --lineHeight: calc(var(--fontSize) * 1.5);
     --white: #FFFFFF;
     --accent-color: #00B7FF;
 
-    --gradient-color-1: #00B7FF;
+    --gradient-color-1: #41c9ff;
     --gradient-color-2: #8500FF;
 }
 
@@ -79,6 +79,7 @@ h3, .h3 {
     font-feature-settings: 'kern'1, 'dlig'1, 'rlig'1, 'liga'1, 'calt'1, 'cv10'0, 'dlig'1, 'ss01'1, 'ss03'1, 'cv05'1;
     font-variation-settings: 'wght' 650;
     font-style: normal;
+    word-break: normal;
 }
 
 .gradient-green {
@@ -113,7 +114,7 @@ h3, .h3 {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-variation-settings: 'wght' 750;
+        font-variation-settings: 'wght' 725;
         padding-right: 0.3rem;
         margin-right: -0.3rem;
     }
@@ -148,6 +149,7 @@ svg {
     margin-bottom: calc(var(--lineHeight) * 0.25);
     color: var(--gray);
     font-variation-settings: "wght" 500;
+    letter-spacing: unset;
 }
 
 .eyebrow + h1 {
@@ -345,7 +347,12 @@ svg {
     scroll-behavior: smooth;
     overflow-x: hidden;
     padding: calc(var(--lineHeight) * 2);
-    padding-bottom:calc(var(--lineHeight) * 3)
+    padding-bottom: calc(var(--lineHeight) * 3)
+}
+
+.spacer {
+    max-height: 100%;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -374,6 +381,8 @@ svg {
 
     overflow-y: scroll;
     overflow-x: hidden;
+
+    grid-auto-rows: min-content;
 }
 
 @supports (-webkit-backdrop-filter: blur(15px)) {
@@ -393,6 +402,8 @@ svg {
 .button-list {
     display: flex;
     flex-wrap: wrap;
+
+    padding-bottom: calc(var(--lineHeight));
 }
 
 .button-list .button {
@@ -404,6 +415,8 @@ svg {
     padding-right: calc(var(--lineHeight) );
 
     text-transform: uppercase;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
 }
 
 .has-dialog #main nav {
@@ -452,6 +465,12 @@ nav > *:first-child {
     box-sizing: border-box;
 
     user-select: none;
+}
+
+a {
+    white-space: normal;
+    text-decoration: underline var(--accent-color);
+    -webkit-text-decoration: underline var(--accent-color);
 }
 
 a:hover {
@@ -528,15 +547,27 @@ a.green {
     background-image: url('/img/stroke3.png');
 }
 
-.quote figure {
+.quote figure, .infobox {
     background: var(--light-gray);
     background-clip: padding-box;
     border-left: solid calc(var(--hrThickness) * 1) transparent;
     padding: calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2) calc(var(--lineHeight) * 1) calc(var(--lineHeight) * 2 - var(--hrThickness));
     position: relative;
+    --accent-color: #8500FF;
 }
 
-.quote figure:before {
+.quote figure::before, .infobox::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(var(--hrThickness) * -1);
+    bottom: 0;
+    width: calc(var(--hrThickness) * 1);
+    background: linear-gradient(182deg, #00B7FF 33%, #8500FF);
+}
+
+.quote figure::after, .infobox::after {
     content: '';
     display: block;
     position: absolute;
@@ -544,20 +575,62 @@ a.green {
     left: calc(var(--hrThickness) * -1);
     bottom: 0;
     right: 0;
-    background: linear-gradient(182deg, #00B7FF 33%, #8500FF);
     box-shadow: rgba(15, 11, 29, 0.1) 0px 1px 2px 0px, rgba(12, 8, 26, 0.08) 0px 2px 10px 0px;
     z-index: -1;
 }
-
 
 .quote figcaption {
     text-align: right;
     font-size: 0.8rem;
 }
 
-.quote figcaption a {
+.quote a, .infobox a {
     white-space: normal;
     display: inline-block;
+}
+
+.pull-quote {
+    font-size: var(--h2-size);
+    font-style: normal;
+    font-variation-settings: 'wght' 400, 'slnt' -6;
+    font-synthesis: none;
+    font-feature-settings: 'kern'1, 'dlig'1, 'rlig'1, 'liga'1, 'calt'1, 'cv10'0, 'dlig'1, 'ss01'1, 'ss03'1, 'cv05'1;
+    letter-spacing: -0.027em;
+    line-height: calc(var(--lineHeight) * 2);
+    padding: calc(var(--lineHeight) * 0.5);
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .pull-quote {
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        font-size: 1.8rem;
+        line-height: calc(var(--lineHeight) * 1.75);
+        padding: calc(var(--lineHeight) * 0.25);
+    }
+}
+
+.pull-quote blockquote::before {
+    content: "»";
+    color: var(--gradient-color-1);
+    display: inline;
+    padding-right: 0.125em;
+}
+
+.pull-quote blockquote::after {
+        content: "«";
+    color: var(--gradient-color-1);
+    display: inline;
+    padding-left: 0.125em;
+}
+
+.pull-quote blockquote {
+    background: linear-gradient(180deg, var(--gradient-color-1) -5%, var(--gradient-color-2) 110%), var(--gradient-color-2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
 }
 
 @media only screen and (min-width: 601px) {
@@ -621,7 +694,7 @@ blockquote:lang(en) p:first-child::before {
 
 blockquote:lang(en) p:last-of-type::after {
     content: '”';
-    margin-left: -.25rem;
+    margin-left: -.05em;
 }
 
 blockquote:lang(de) p:first-child::before {
@@ -632,7 +705,7 @@ blockquote:lang(de) p:first-child::before {
 
 blockquote:lang(de) p:last-of-type::after {
     content: '“';
-    margin-left: -.25rem;
+    margin-left: -.05em;
     display: inline-block;
     width: 0;
 }
@@ -667,6 +740,9 @@ blockquote footer {
 @media only screen and (min-width: 601px) {
     ul {
         padding: 0;
+    }
+    ul ul {
+        margin-left: calc(var(--lineHeight) * 1);
     }
     li {
         margin-left: calc(var(--lineHeight) * -0.2);

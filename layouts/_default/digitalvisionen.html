@@ -1,15 +1,16 @@
 {{ define "main" }}
 <r-cell span-s="row" span="1-6">
-    <h2 class="eyebrow">TODO: EYEBROW</h2>
+    <h2 class="eyebrow">Ideen und Vorschläge für die Digitalisierung von Morgen</h2>
     <h1 class="h1">Digitalvisionen</h1>
     <p class="low-contrast">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sapiente sit quam dicta tenetur nihil
-        nostrum alias similique officiis debitis rem fugiat, sed at! Nulla facere rerum eum tempora
-        asperiores.
+        Vierzehn Organisationen aus der digitalen Zivilgesellschaft haben Digitalvisionen entworfen. Einstieg ist dabei
+        immer eine Betrachtung des Status Quo. Die Visionen enden mit konkreten Handlungsempfehlungen und Forderungen an
+        die Politik. Von Bildung und Zugang über demokratische Partizipation, Nachhaltigkeit und Feminismus, wurde ein
+        breites Spektrum an Themen abgedeckt.
     </p>
 </r-cell>
 <r-cell class="button-list" span="row">
-    {{ range where (where .Site.RegularPages "Type" "digitalvisionen") "File.Dir" "digitalvisionen/" }}
+    {{ range where (where .Site.RegularPages.ByWeight "Type" "digitalvisionen") "File.Dir" "digitalvisionen/" }}
     <a role="button" class="button" href="{{.Permalink}}">
         {{.Params.Topic}}
     </a>
