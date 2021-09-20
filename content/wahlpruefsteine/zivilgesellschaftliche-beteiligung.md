@@ -1,7 +1,7 @@
 ---
 author: Tom Jennissen
 eyebrow: Wahlprüfstein
-title: "Zivil&shy;gesellschaft&shy;liche *Beteiligung*"
+title: "Zivil&shy;gesell&shy;schaft&shy;liche *Beteiligung*"
 topic: Beteiligung
 weight: 2
 color1: "#00F385"

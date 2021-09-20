@@ -49,13 +49,23 @@ body {
 @media only screen and (max-width: 600px) {
     :root {
         --fontSize: 15px;
-        --h1-size: 2.45rem;
-        --h2-size: 2.1rem;
+        --h1-size: 2.1rem;
+        --h2-size: 1.7rem;
         --h3-size: 1.2rem;
         --h4-size: 1.1rem;
 
         --columnGap: calc(var(--lineHeight));
         --rowGap: var(--lineHeight);
+    }
+
+    h1, .h1 {
+        line-height: calc(var(--lineHeight) * 1.75);
+        letter-spacing: -0.025em;
+    }
+
+    h2, .h2 {
+        line-height: calc(var(--lineHeight) * 1.5);
+        letter-spacing: -0.03em;
     }
 }
 
@@ -330,7 +340,6 @@ svg {
 }
 
 #image-big-group {
-    flex: 0 0 0%;
     max-width: calc(var(--baseline) * 20.18 * 2);
 }
 
@@ -424,18 +433,22 @@ svg {
 }
 
 nav {
-    font-size: 0.9rem;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+
+    margin-bottom: calc(var(--lineHeight) / 2);
+    margin-left: calc(var(--lineHeight) / -8);
+    margin-right: calc(var(--lineHeight) / -8);
 }
 
 nav > * {
     margin-left: calc(var(--lineHeight) / 2);
+    margin-bottom: calc(var(--lineHeight) / 2);
 }
 
 nav > *:first-child {
-    margin-right: unset;
+    margin-left: unset;
 }
 
 .nav-button {

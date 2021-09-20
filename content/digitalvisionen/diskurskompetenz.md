@@ -1,7 +1,7 @@
 ---
 author: Betterplace Lab
 eyebrow: Katja Jäger von Betterplace Lab zur Diskurskompetenz
-title: "Der Weg zur *diskurskompetenten* Gesellschaft"
+title: "Der Weg zur *diskurs*&shy;kompetenten Gesellschaft"
 topic: Diskurskompetenz
 ---
 

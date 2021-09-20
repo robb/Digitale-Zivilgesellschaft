@@ -1,7 +1,7 @@
 ---
 author: Stiftung Neue Verantwortung
-eyebrow: Die Stiftung Neue Verantwortung über Open E-Government
-title: "Ohne *Kulturwandel* kein digitaler Wandel: Handlungs&shy;schritte für eine moderne Verwaltung"
+eyebrow: Handlungs&shy;schritte für eine moderne Verwaltung
+title: "Ohne *Kulturwandel* kein digitaler Wandel"
 topic: Open E-Government
 ---
 

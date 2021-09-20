@@ -1,7 +1,7 @@
 ---
 author: betterplace lab
 eyebrow: Wahlprüfstein
-title: "Digitale Plattformen für das *Gemeinwohl*"
+title: "Digitale Platt&shy;formen für das *Gemeinwohl*"
 topic: Gemeinwohl
 weight: 4
 color1: "#2CDA85"
