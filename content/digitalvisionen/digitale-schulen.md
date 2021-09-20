@@ -40,4 +40,4 @@ Dafür muss eine gewisse Radikalität und eine neue Aufstellung von Unterricht u
 All diese Faktoren und Fähigkeiten sind ein wichtiger Teil einer neu gedachten Bildung, die alle auch in den digitalen Welten selbst hilfreich sind. Es ist Zeit, dass wir ihre Umsetzung und Integration an Schulen einfordern.
 ### Autor
 
-Johnny Haeusler ist ein Berliner Autor, Musiker, Gründer und Geschäftsführer der re:publica sowie Vorsitzender des TINCON e. V., mit dem er sich für mehr Aufmerksamkeit für junge Stimmen und Lebensrealitäten engagiert. 
+Johnny Haeusler ist ein Berliner Autor, Musiker, Gründer und Geschäftsführer der re:publica sowie Vorsitzender des [TINCON e. V.](https://tincon.org), mit dem er sich für mehr Aufmerksamkeit für junge Stimmen und Lebensrealitäten engagiert. 

@@ -12,7 +12,7 @@ Demokratie, Transparenz, Partizipation. Große Begriffe, die sich alle Parteien 
 Selbst eine grundlegende Übersicht über Art und Umfang der Beteiligung von Verbänden und Unternehmen bei der Erarbeitung kann sie nicht vorlegen. Dazu müssten riesige Papieraktenberge händisch durchsucht werden. Art und Umfang von Beteiligungsverfahren obliegen dem Ermessen der zuständigen Ministerien, jedoch „unter dem Vorbehalt des tatsächlich Möglichen“. Dieser Vorbehalt ist leider groß: Wenn das zuständige Ministerium zwei Jahre braucht, um eine EU-Richtlinie in einen Gesetzentwurf umzusetzen, dann bleiben häufig nur zwei Tage für zivilgesellschaftliche Stellungnahmen. 
 
 {{<infobox>}}
-* Horst Seehofer, Bundesminister für Inneres und Heimat:<br> „Man muss Gesetze kompliziert machen. Dann fällt es nicht so auf.“
+* Horst Seehofer, Bundesminister für Inneres und Heimat:<br> [„Man muss Gesetze kompliziert machen. Dann fällt es nicht so auf.“](https://www.tagesspiegel.de/politik/man-muss-gesetze-komplizierter-machen-video-mit-seehofer-zitaten-sorgt-fuer-empoerung/24434514.html)
 * [Offener Brief](https://gi.de/meldung/offener-brief-ausreichende-fristen-fuer-verbaendebeteiligung) „Angemessene Fristen statt Scheinbeteiligung“
 {{</infobox>}}
 

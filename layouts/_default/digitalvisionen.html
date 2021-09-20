@@ -11,7 +11,7 @@
 </r-cell>
 <r-cell class="button-list" span="row">
     {{ range where (where .Site.RegularPages.ByWeight "Type" "digitalvisionen") "File.Dir" "digitalvisionen/" }}
-    <a role="button" class="button" href="{{.Permalink}}">
+    <a role="button" class="button" href="{{.RelPermalink}}">
         {{.Params.Topic}}
     </a>
     {{ end }}

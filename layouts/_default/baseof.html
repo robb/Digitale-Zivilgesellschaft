@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Vier Forderungen für eine digital-souveräne Gesellschaft</title>
+    <title>{{ .Title | markdownify | plainify }} – digitalezivilgesellschaft.org</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <meta name="twitter:card" content="summary" />
     <meta content="https://digitalezivilgesellschaft.org/og_image.png" name="twitter:image" />
     <meta property="og:url" content="https://digitalezivilgesellschaft.org" />
-    <meta property="og:title" content="Vier Forderungen für eine digital-souveräne Gesellschaft" />
+    <meta property="og:title" content="{{ .Title | markdownify | plainify }}" />
     <meta property="og:image" content="og_image.png" />
     <meta property="og:description"
         content="Empfehlungen der Zivilgesellschaft für eine unabhängige digitale Infrastruktur und freien Zugang zu Wissen einsetzen." />
@@ -21,7 +21,7 @@
 
     <link rel="canonical" href="https://digitalezivilgesellschaft.org">
     <link rel="stylesheet" href="/raster/raster2.css">
-    <link rel="stylesheet" href="/stylesheet.css?akldhf">
+    <link rel="stylesheet" href="/stylesheet.css?sadfkjh">
     <link rel="icon" href="/favicon.svg">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="mask-icon" href="/mask-icon.svg" color="#000000">
@@ -47,7 +47,7 @@
             <r-cell class="button-list" span="row">
                 {{ range where (where .Site.RegularPages.ByWeight "Type" "digitalvisionen") "File.Dir"
                 "digitalvisionen/" }}
-                <a role="button" class="button" href="{{.Permalink}}">
+                <a role="button" class="button" href="{{.RelPermalink}}">
                     {{.Params.Topic}}
                 </a>
                 {{ end }}
@@ -70,7 +70,7 @@
             <r-cell class="button-list" span="row">
                 {{ range where (where .Site.RegularPages.ByWeight "Type" "wahlpruefsteine") "File.Dir"
                 "wahlpruefsteine/" }}
-                <a role="button" class="button" href="{{.Permalink}}">
+                <a role="button" class="button" href="{{.RelPermalink}}">
                     {{.Params.Topic}}
                 </a>
                 {{ end }}

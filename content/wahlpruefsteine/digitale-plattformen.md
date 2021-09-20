@@ -4,6 +4,8 @@ eyebrow: Wahlprüfstein
 title: "Digitale Plattformen für das *Gemeinwohl*"
 topic: Gemeinwohl
 weight: 4
+color1: "#2CDA85"
+color2: "#00A638"
 ---
 
 Die vierte Forderung aus der digitalen Zivilgesellschaft zielt auf eine nachhaltige Digitalisierung ab. Wir haben die Parteien zu ihren Positionen befragt, wie sie bei einer Regierungsbeteiligung zur Förderung gemeinwohlorientierter und genossenschaftlicher Plattformen stehen.

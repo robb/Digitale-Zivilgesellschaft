@@ -7,7 +7,7 @@ topic: Open E-Government
 
 ## Der Status Quo
 
-Abgelaufener Personalausweis, Ummeldung oder Kindergeldbeantragung – auch wenn sich 85 % der Deutschen wünschen, Verwaltungsleistungen online in Anspruch zu nehmen, führen die Wege immer noch ins Amt. Deutschlands Aufholbedarf spiegelt sich im Ranking des „Digital Economy and Society Index“ der EU wider: Mit Blick auf das E-Government belegt Deutschland im europäischen Vergleich nur Platz 21. 
+Abgelaufener Personalausweis, Ummeldung oder Kindergeldbeantragung – auch wenn sich 85% der Deutschen wünschen, Verwaltungsleistungen online in Anspruch zu nehmen, führen die Wege immer noch ins Amt. Deutschlands Aufholbedarf spiegelt sich im Ranking des „Digital Economy and Society Index“ der EU wider: Mit Blick auf das E-Government belegt Deutschland im europäischen Vergleich nur Platz 21. 
 
 Deutschland hat sich im Rahmen des Onlinezugangsgesetzes (OZG) verpflichtet, Verwaltungsdienstleistungen bis Ende 2022 elektronisch anzubieten, und dafür 3 Milliarden Euro bereitgestellt. Mangelnde Investitionen scheinen also nicht der Grund für die schleichende Umsetzung zu sein. Vielmehr hakt es an vielen Stellen in der Organisation: von der grundlegenden Prüfung der Prozesse, Strukturen und Gesetze auf ihre Digitaltauglichkeit sowie deren Modernisierung über die Ausbildung digitaler Kompetenzen, die Schaffung der technischen digitalen Infrastruktur bis zur Definition eindeutiger Zuständigkeiten. 
 

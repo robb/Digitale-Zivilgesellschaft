@@ -1,5 +1,6 @@
 {{ define "main" }}
-<r-cell span-s="row" span="3-10">
+<r-cell span-s="row" span="3-10"
+    style="{{if .Params.Color1 }}--gradient-color-1: {{ .Params.Color1 }};{{end}}{{if .Params.Color2 }}--gradient-color-2: {{ .Params.Color2 }};{{end}}">
     <h2 class="eyebrow">{{ .Params.Eyebrow | markdownify }}</h2>
     <h1>{{ .Title | markdownify }}</h1>
     {{ .Content }}

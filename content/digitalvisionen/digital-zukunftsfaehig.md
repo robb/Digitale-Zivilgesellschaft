@@ -16,7 +16,7 @@ Die derzeitige Gestaltung der digitalen Infrastruktur ist damit weder für die M
 Die Herstellung der Elektronikkomponenten findet häufig an Standorten mit hohen Kohlestromanteilen im Strommix und unter menschenunwürdigen Bedingungen statt. Der Großteil unserer Smartphones, Rechner und Laptops kann nicht repariert oder langfristig genutzt werden, gleichzeitig haben viele Menschen gar keine Zugangsmöglichkeiten. Die derzeitige Gestaltung der digitalen Infrastruktur ist damit weder für die Menschen noch für die Umwelt nachhaltig. 
 
 {{<infobox>}}
-- Der Stromverbrauch des IKT-Sektors könnte [im Jahr 2030](https://www.nature.com/articles/d41586-018-06610-y) auf 14 % des globalen Stromverbrauchs steigen.
+- Der Stromverbrauch des IKT-Sektors könnte [im Jahr 2030](https://www.nature.com/articles/d41586-018-06610-y) auf 14% des globalen Stromverbrauchs steigen.
 - Wie hängen [Digitalisierung und Nachhaltigkeit](https://www.oekom.de/buch/was-bits-und-baeume-verbindet-9783962381493) eigentlich zusammen?
 - [Ideen für eine nachhaltige Transformation](https://www.oekologisches-wirtschaften.de/index.php/oew/issue/view/161): Ökologisches Wirtschaften: Digitalisation and Sustainability. Future technology between resource consumption and opportunities for socio-ecological transformation. 
 {{</infobox>}}
@@ -33,8 +33,6 @@ Dank dieser Initiative ist nun in vielen Bereichen Mitbestimmung und Transparenz
 
 
 ## Unsere Forderungen an die Politik
-
-Zwei bis vier konkrete Schritte, die in der nächsten Legislatur umgesetzt werden müssen, damit die Fiktion Realität wird.
 
 - Digitale Infrastruktur muss so ressourcen- und energiesparend wie möglich funktionieren. Dazu muss eine verpflichtende Standardisierung von Hardware auf EU-Ebene umgesetzt werden. Bei Neuausschreibungen müssen Betreibende sicherstellen, dass sie die Kriterien für ressourcensparende Rechenzentren und Netzwerke erfüllen. Dazu muss der „Blaue Engel“ für Rechenzentren weiterentwickelt und verpflichtend eingeführt werden.
 - Ein wirksames Lieferkettengesetz verpflichtet Unternehmen zur Sorgfalt entlang der gesamten Wertschöpfungskette und ermöglicht eine zivile Haftung, damit Betroffene von Menschenrechtsverletzungen Schadensersatz von den Unternehmen fordern können. 

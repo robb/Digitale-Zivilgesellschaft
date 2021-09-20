@@ -40,6 +40,6 @@ Digitalisierung kann nur dann einen demokratischen Anspruch stellen, wenn sie ba
 - Viertens: Solange Barrierefreiheit als Nischenthema betrachtet wird und bei Gesetzesinitiativen nur als Nebengedanke auftritt, kann sie ihr Potenzial als Teilhabemotor nicht entfalten. Wir fordern deshalb eine Ombudsperson für Barrierefreiheit in jedem Ministerium. Nur so können wir erreichen, dass Menschen mit Behinderungen etwa bei Klima-, Verkehrs- und Digitalpolitik von Anfang bis Ende mitgedacht und beteiligt werden. 
 - Fünftens: Barrierefreiheit und Zugänglichkeit hilft allen Menschen weiter. Jeder Mensch nutzt gerne einen Aufzug, jeder Mensch mag automatisch öffnende Türen und viele Menschen haben schon Videos mit Untertitel angeschaut, weil sie den Ton gerade nicht anschalten konnten. Barrierefreiheit ist für alle da. Genau diesen Stellenwert braucht das Thema in Politik und Gesellschaft. Wir nennen es Disability Mainstreaming. Nur so wird die Zukunft für uns alle gestaltet.
 
-### Author
+### Autor
 
 Über [Sozialhelden e. V.](https://sozialhelden.de/en/social-heroes/): Seit über 15 Jahren arbeiten wir Sozialheld\*innen an Lösungen für mehr Teilhabe und Barrierefreiheit. Wir verstehen uns als konstruktive Aktivist\*innen, die sich mittels moderner Kommunikation und Technologien für eine bessere Welt für alle einsetzen.

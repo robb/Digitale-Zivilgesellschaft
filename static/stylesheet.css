@@ -468,6 +468,7 @@ nav > *:first-child {
 }
 
 a {
+    display: inline;
     white-space: normal;
     text-decoration: underline var(--accent-color);
     -webkit-text-decoration: underline var(--accent-color);
@@ -619,7 +620,7 @@ a.green {
 }
 
 .pull-quote blockquote::after {
-        content: "«";
+    content: "«";
     color: var(--gradient-color-1);
     display: inline;
     padding-left: 0.125em;
@@ -679,11 +680,11 @@ blockquote p:last-of-type::after {
 }
 
 blockquote p:first-child::before {
-    color: #00B7FF;
+    color: var(--gradient-color-1);
 }
 
 blockquote p:last-of-type::after {
-    color: #8500FF;
+    color: var(--gradient-color-2);
 }
 
 blockquote:lang(en) p:first-child::before {

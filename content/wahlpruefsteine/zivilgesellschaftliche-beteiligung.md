@@ -4,6 +4,8 @@ eyebrow: Wahlprüfstein
 title: "Zivil&shy;gesellschaft&shy;liche *Beteiligung*"
 topic: Beteiligung
 weight: 2
+color1: "#00F385"
+color2: "#0e89b9"
 ---
 
 Es war abzusehen, dass fast alle Parteien Bürgerbeteiligung, Engagement und Grundrechte irgendwie gut finden. Auch Transparenz und Einbindung der Zivilgesellschaft lehnt wohl keine der demokratischen Parteien rundheraus ab. Wir haben daher versucht, so konkret wie möglich Positionen und Pläne aus den Parteien herauszukitzeln. Aber leider bleiben die Antworten eher vage, konkret werden sie allenfalls in einzelnen Vorhaben. Obwohl wir – ausgehend von unserer Forderung nach einer aktiven Einbindung der Zivilgesellschaft – ausdrücklich nach deren Beteiligung an politischen Entscheidungsprozessen gefragt haben, werden Begriffe wie Beteiligung, Teilhabe, Engagement und Zivilgesellschaft von allen Parteien recht wild durcheinandergeworfen. Die Antworten auf unsere Fragen kreisen daher eher allgemein um das Thema „Einbindung von Bürgerinnen und Bürgern“. 

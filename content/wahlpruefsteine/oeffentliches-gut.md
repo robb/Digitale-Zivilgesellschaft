@@ -4,6 +4,8 @@ eyebrow: Wahlprüfstein
 title: "Public Money? Public *Code*!"
 topic: Öffentliches Gut
 weight: 3
+color1: "#F60"
+color2: "#E0B"
 ---
 
 Die dritte Forderung der digitalen Zivilgesellschaft lautet “Öffentliches Geld, öffentliches Gut”. Wie stehen die Parteien dazu, und wie genau wollen sie den Einsatz von Freier Software in der Verwaltung fördern?

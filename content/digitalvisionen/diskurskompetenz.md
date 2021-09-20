@@ -37,6 +37,6 @@ Wir fordern eine Digitalpolitik, die das __diskursive Potential digitaler Techno
 
 - __Medienkompetenz von Individuen stärken:__ Bildungsangebote werden flächendeckend und zielgruppengerecht angeboten, um für den kompetenten und sicheren Umgang der Nutzer\*innen im Netz zu schulen. In der Jugend- und Erwachsenenbildung – ob in Schulen, sozialen Einrichtungen oder dem Arbeitsort – gehören Medienkompetenz Programme zum Standard-Repertoire. 
 
-### Authorin
+### Autorin
 
 Katja Jäger, [Betterplace Lab](https://www.betterplace-lab.org/). Katja Jäger ist überzeugt, dass in der Digitalisierung lauter Potentiale stecken, die zum Wohle der Menschheit eingesetzt werden sollten. In den letzten Jahren hat sie genauer untersucht, wie Digitalisierung und Demokratie zusammengehen.

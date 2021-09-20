@@ -18,7 +18,7 @@ Bei dem Versuch, das Bildungswesen innerhalb kürzester Zeit zu digitalisieren, 
 {{<infobox>}}
 - „Die Zeit, in der sich Kinder täglich mit der Schule beschäftigt haben, hat sich während der Corona-Zeit [halbiert](https://www.ifo.de/node/57298). Sie sank von 7,4 auf 3,6 Stunden pro Tag." 
 - „[Fast jedes dritte Kind](https://www.uke.de/allgemein/presse/pressemitteilungen/detailseite_104081.html) leidet ein knappes Jahr nach Beginn der Pandemie unter psychischen Auffälligkeiten. [...] Erneut sind vor allem Kinder und Jugendliche aus sozial schwächeren Verhältnissen oder mit Migrationshintergrund betroffen."
-- „[Fast die Hälfte der Eltern](https://www.dak.de/dak/download/forsa-studie-2266768.pdf) äußert, während der Schulschließung oft (32 %) oder sehr oft (16 %) Stress gehabt zu haben. [...] Streit in der Familie gab es bei 21 Prozent oft und bei 5 Prozent sehr oft." Quelle
+- „[Fast die Hälfte der Eltern](https://www.dak.de/dak/download/forsa-studie-2266768.pdf) äußert, während der Schulschließung oft (32%) oder sehr oft (16%) Stress gehabt zu haben. [...] Streit in der Familie gab es bei 21 Prozent oft und bei 5 Prozent sehr oft." Quelle
 {{</infobox>}}
 
 ## Unsere Vision für 2030
