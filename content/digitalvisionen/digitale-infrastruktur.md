@@ -43,7 +43,7 @@ Um die Ziele erreichen zu können, bedarf es konkreter Handlungsschritte. Willen
 - Förderung des Austauschs mit Freie-Software-Projekten, etwa über Freie-Software-Sabbaticals für Mitarbeitende im öffentlichen Dienst
 - Bereitstellung kleinerer flexibler Budgets, um Verwaltungen einen Spielraum für innovative Lösungen zu ermöglichen
 
-## Autor
+### Autor
 
 Alexander Sander, [Free Software Foundation Europe](https://fsfe.org/index.en.html), Die Free Software Foundation Europe ist ein gemeinnütziger Verein, der sich für einen selbstbestimmten Umgang mit Technik einsetzt.
 

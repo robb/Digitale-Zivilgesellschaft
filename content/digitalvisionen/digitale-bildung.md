@@ -55,7 +55,7 @@ Die Selbstwirksamkeit in gesellschaftlichen Gestaltungsprozessen ist für die Me
 - Schaffung eines Reallabors für die Anwendung dieser neuen Formate in Erwachsenengruppen 
 - Finanzierung der Weiterentwicklung von Freien und Open-Source-Software-Lösungen für Open Knowledge Simulation Modeling, um diskriminierungsfreie digitale Partizipation zu ermöglichen
 
-## Autor
+### Autor
 
 Mirko de Paoli, Vorstandsvorsitzender des [Bundesverband Smart City e. V.](https://bundesverband-smart-city.org/) (BVSC)
 

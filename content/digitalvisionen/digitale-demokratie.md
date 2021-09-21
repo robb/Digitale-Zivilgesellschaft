@@ -35,6 +35,6 @@ Eine Infrastruktur für digitale Demokratie braucht eine langfristige Finanzieru
 
 Bürger\*innen sollten spätestens 2024 die Möglichkeit haben, an Gesetzgebungsprozessen aller Bundesministerien digital mitzuwirken. Erste Handlungsempfehlungen aus Forderung 1 können so praktisch erprobt werden. Die wissenschaftliche Evaluation umgesetzter Beteiligungsprojekte kann wiederum in die Arbeit der Expert\*innen- und der Enquete-Kommission einfließen.
 
-## Autor
+### Autor
 
 [Liquid Democracy](https://liqd.net/de/) ist ein gemeinnütziger Verein, der innovative Konzepte für demokratische Beteiligung entwickelt und umsetzt. Die Vision ist eine demokratische Kultur, in der Mitgestaltung für jede\*n selbstverständlich ist. Dabei setzt Liquid Democracy vor allem auf die Potenziale des Internets, um Entscheidungsprozesse zugänglicher zu gestalten. 

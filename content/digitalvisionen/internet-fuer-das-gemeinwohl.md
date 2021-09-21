@@ -22,7 +22,7 @@ Nicht die Regeln für profitorientierte Dienste dürfen hier der Maßstab sein. 
 - Digital gelebtes Engagement muss gesellschaftlich in vergleichbarer Weise anerkannt und gefördert werden wie Engagement außerhalb des Netzes. Hierfür ist unter anderem erforderlich, dass Ehrenamtlichen-Communitys der Zugang zu den Ressourcen, die sie vor allem für ihre Arbeit benötigen, erleichtert wird. Dazu gehören Inhalte, mit denen sie arbeiten können, und Zeit. Auch müssen Haftungsrisiken für ehrenamtliche und gemeinnützige Netzprojekte jederzeit tragbar bleiben.
 - Um den Plattformen des Public Interest Internet bessere Chancen gegenüber digitalen Großkonzernen zu verschaffen, müssen genossenschaftliche und andere alternative Finanzierungsmodelle von Seiten des Staates begünstigt, offene Schnittstellen gefördert und die Datenbestände besonders mächtiger Online-Dienste auch für Externe zugänglich gemacht werden.
 
-## Author
+### Autor
 
 John Weitzmann, Leiter Politik und Recht, Wikimedia Deutschland e. V..
 
