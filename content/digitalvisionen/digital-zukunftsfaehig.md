@@ -1,6 +1,6 @@
 ---
 author: FUTURZWEI
-eyebrow: Gemeinwohlorient & langlebig
+eyebrow: Gemeinwohlorientiert & langlebig
 title: "Wie wir digitale Infra&shy;strukturen *für&nbsp;alle* aufbauen können"
 topic: Zukunftsfähigkeit
 ---
