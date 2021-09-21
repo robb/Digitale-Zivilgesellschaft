@@ -6,24 +6,14 @@
         </a>
         {{ end }}
 
-        {{ if or (eq .Page.RelPermalink "/digitalvisionen/") (eq .Page.RelPermalink "/wahlpruefsteine/") }}
-        <a tabindex="0" role="button" class="nav-button" href="/digitalvisionen/">
+        <a tabindex="0" role="button" class="nav-button" href="/digitalvisionen/" {{ if eq
+            .Page.RelPermalink "/digitalvisionen/" }}disabled{{ end }}>
             Digitalvisionen
         </a>
 
-        <a tabindex="0" role="button" class="nav-button" href="/wahlpruefsteine/">
+        <a tabindex="0" role="button" class="nav-button" href="/wahlpruefsteine/" {{ if eq
+            .Page.RelPermalink "/wahlpruefsteine/" }}disabled{{ end }}>
             Wahlprüfsteine
         </a>
-        {{ else }}
-        <a tabindex="0" role="button" class="nav-button"
-            onclick="return toggleDialog('#menu-digitalvisionen', this, '.button-list a')" href="/digitalvisionen/">
-            Digitalvisionen
-        </a>
-
-        <a tabindex="0" role="button" class="nav-button"
-            onclick="return toggleDialog('#menu-wahlpruefsteine', this, '.button-list a')" href="/wahlpruefsteine/">
-            Wahlprüfsteine
-        </a>
-        {{ end }}
     </nav>
 </r-cell>

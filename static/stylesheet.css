@@ -3,7 +3,7 @@
     --dark-green: rgb(18, 168, 126);
     --light-gray: #f3f3f7;
     --gray: #AAC;
-    --dark-gray: #383858;
+    --dark-gray: #484858;
     --fontSize: calc(100vw / 60);
     --lineHeight: calc(var(--fontSize) * 1.5);
     --white: #FFFFFF;
@@ -478,6 +478,12 @@ nav > *:first-child {
     box-sizing: border-box;
 
     user-select: none;
+}
+
+.nav-button[disabled] {
+    --accent-color: #E80;
+    cursor: default;
+    pointer-events: none;
 }
 
 a {
