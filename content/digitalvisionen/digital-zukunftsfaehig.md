@@ -40,7 +40,7 @@ Dank dieser Initiative ist nun in vielen Bereichen Mitbestimmung und Transparenz
 - Schaffung eines Fonds für die langfristige Förderung zivilgesellschaftlicher Initiativen, die sich dem Gemeinwohl und der nachhaltigen gesellschaftlichen Transformation verpflichtet haben. Das Gemeinnützigkeitsrecht muss aktualisiert werden, um die agile und versierte digitale Zivilgesellschaft gebührend wertzuschätzen und weiter zu stärken.
 - „Public Money – Public Code": Um öffentliche und nachhaltige digitale Infrastrukturen zu fördern, braucht es eine rechtliche Verpflichtung, dass mit öffentlichen Geldern entwickelte Soft- und Hardware unter einer Freie-Software- und Open-Source-Lizenz veröffentlicht werden. Zudem wird ein Europäischer Fonds für offene Technologien zur Schaffung langfristiger Strukturen, die die Entwicklung nachhaltiger und offener Hard- und Software fördern und zur digitalen Souveränität beitragen, benötigt. 
 
-## Autor\*innen
+### Autor\*innen
 
 Friederike Rohde & Johanna Pohl und die Mitglieder des Arbeitskreises _Zukunftsfähige Digitalität_ (Volker Bernhard, Vivian Frick, Maike Gossen, Maxim Keller, Felix Maschewski, Anna-Verena Nosthoff und Gemina Picht).
 
