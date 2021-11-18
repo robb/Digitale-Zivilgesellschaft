@@ -434,6 +434,12 @@
             "multiplier": 1,
             "logo": "/logos/sds.png",
             "name": "Stiftung Datenschutz"
+        },
+        {
+            "url": "https://fczb.de/",
+            "multiplier": 1,
+            "logo": "/logos/fczb.png",
+            "name": "FrauenComputerZentrumBerlin e.V. (FCZB)"
         }
     ]
 }
