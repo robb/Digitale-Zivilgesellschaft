@@ -440,6 +440,12 @@
             "multiplier": 1,
             "logo": "/logos/fczb.png",
             "name": "FrauenComputerZentrumBerlin e.V. (FCZB)"
+        },
+        {
+            "url": "https://awo.org/",
+            "multiplier": 1,
+            "logo": "/logos/awo.png",
+            "name": "AWO Bundesverband"
         }
     ]
 }
